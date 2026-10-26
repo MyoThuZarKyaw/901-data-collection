@@ -1,0 +1,1046 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1793015045019,204,[?Auth] Login user,200,,setUp Thread Group 1-1,text,true,,1339,260,1,1,http://localhost:8080/api/authenticate,199,0,32
+1793015046460,132,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,1,1,http://localhost:8080/services/order-service/api/orders,131,0,1
+1793015047686,79,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,1,1,http://localhost:8080/services/payment-service/api/payments?page=1,79,0,0
+1793015048897,25,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,1,1,http://localhost:8080/services/inventory-service/api/products,24,0,0
+1793015050132,146,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,1,1,http://localhost:8080/services/order-service/api/orders,146,0,1
+1793015051446,23,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,23,0,0
+1793015051492,48,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,48,0,1
+1793015052560,11,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,11,0,0
+1793015052560,14,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,14,0,0
+1793015053479,13,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,12,0,0
+1793015053704,34,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,34,0,0
+1793015054464,177,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,176,0,1
+1793015054644,21,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,21,0,0
+1793015055688,24,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,24,0,0
+1793015055745,21,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,21,0,0
+1793015056536,68,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,68,0,2
+1793015056914,17,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,17,0,0
+1793015057750,30,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,30,0,0
+1793015057995,102,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,102,0,1
+1793015058987,26,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,26,0,0
+1793015059130,24,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,24,0,0
+1793015059807,33,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,33,0,0
+1793015059840,50,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,50,0,1
+1793015060705,25,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,25,0,0
+1793015060714,60,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,60,0,1
+1793015061692,23,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,23,0,0
+1793015061745,26,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,26,0,0
+1793015062762,44,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,44,0,1
+1793015062916,13,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,13,0,0
+1793015063477,17,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,17,0,0
+1793015063863,41,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,40,0,1
+1793015064788,10,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,10,0,0
+1793015064807,9,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,9,0,0
+1793015065891,10,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,9,0,0
+1793015065956,30,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,30,0,1
+1793015066935,59,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,59,0,1
+1793015067052,27,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,27,0,0
+1793015068110,30,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,30,0,0
+1793015068121,29,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,29,0,0
+1793015069100,67,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,67,0,1
+1793015069289,11,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,11,0,0
+1793015070309,20,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,20,0,0
+1793015070418,66,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,66,0,1
+1793015071390,11,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,11,0,0
+1793015071838,25,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,25,0,0
+1793015072340,62,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,62,0,1
+1793015073040,27,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,26,0,0
+1793015073298,29,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,29,0,0
+1793015073890,61,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,61,0,1
+1793015074528,13,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,13,0,0
+1793015074893,12,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,12,0,0
+1793015075306,61,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,61,0,3
+1793015076003,14,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,14,0,0
+1793015076662,18,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,18,0,0
+1793015076778,29,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,29,0,1
+1793015077720,114,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,108,0,0
+1793015077619,217,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,217,0,0
+1793015078672,35,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,35,0,1
+1793015078879,9,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,8,0,0
+1793015079813,30,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,30,0,0
+1793015080066,74,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,74,0,2
+1793015080748,12,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,12,0,0
+1793015081003,30,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,30,0,0
+1793015081619,60,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,60,0,2
+1793015082145,11,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,11,0,0
+1793015082549,9,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,9,0,0
+1793015083308,54,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,54,0,1
+1793015083765,23,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,23,0,0
+1793015084069,15,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,15,0,0
+1793015084705,29,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,29,0,1
+1793015085000,9,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,9,0,0
+1793015085634,34,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,34,0,1
+1793015085758,11,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,11,0,0
+1793015086881,14,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,14,0,0
+1793015087195,28,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,27,0,0
+1793015087717,92,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,92,0,1
+1793015088198,14,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,14,0,0
+1793015088928,24,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,24,0,0
+1793015089414,44,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,44,0,1
+1793015089993,11,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,11,0,0
+1793015090571,10,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,10,0,0
+1793015091183,32,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,32,0,0
+1793015091757,20,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,20,0,0
+1793015092120,35,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,35,0,0
+1793015092680,44,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,44,0,1
+1793015093097,26,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,25,0,0
+1793015093691,28,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,28,0,0
+1793015094068,37,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,37,0,2
+1793015094895,24,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,24,0,0
+1793015095047,17,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,16,0,0
+1793015096013,26,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,26,0,0
+1793015096013,67,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,66,0,1
+1793015096774,13,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,13,0,0
+1793015097251,62,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,62,0,1
+1793015097624,15,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,15,0,0
+1793015098153,17,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,17,0,0
+1793015098727,46,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,46,0,1
+1793015099106,28,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,28,0,0
+1793015099705,26,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,25,0,0
+1793015100014,39,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,39,0,0
+1793015100826,13,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,13,0,0
+1793015100931,14,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,14,0,0
+1793015101788,15,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,15,0,0
+1793015102195,32,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,32,0,1
+1793015103070,31,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,31,0,1
+1793015103354,11,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,11,0,0
+1793015104129,17,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,16,0,0
+1793015104286,21,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,21,0,0
+1793015105121,39,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,39,0,1
+1793015105316,41,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,41,0,0
+1793015105942,35,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,35,0,1
+1793015105963,20,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,20,0,0
+1793015106864,17,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,17,0,0
+1793015107236,22,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,22,0,0
+1793015107952,27,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,27,0,0
+1793015107967,49,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,49,0,2
+1793015109089,61,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,61,0,1
+1793015109257,20,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,20,0,0
+1793015110313,21,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,20,0,0
+1793015110313,22,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,22,0,0
+1793015111392,25,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,25,0,0
+1793015111541,55,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,55,0,2
+1793015112427,72,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,72,0,2
+1793015112796,11,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,11,0,0
+1793015113599,9,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,9,0,0
+1793015113703,17,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,17,0,0
+1793015114446,36,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,36,0,0
+1793015114790,10,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,10,0,0
+1793015115428,13,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,13,0,0
+1793015115438,30,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,30,0,1
+1793015116164,25,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,25,0,0
+1793015116444,11,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,11,0,0
+1793015116880,45,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,45,0,1
+1793015117255,20,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,20,0,0
+1793015118238,64,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,64,0,0
+1793015118185,132,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,132,0,0
+1793015119262,22,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,22,0,0
+1793015119262,29,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,29,0,0
+1793015120371,16,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,16,0,0
+1793015120538,30,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,30,0,1
+1793015121327,61,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,61,0,2
+1793015121501,15,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,15,0,0
+1793015122375,23,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,23,0,0
+1793015122432,26,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,26,0,0
+1793015123402,23,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,23,0,0
+1793015123621,45,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,45,0,1
+1793015124532,58,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,58,0,1
+1793015124741,12,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,12,0,0
+1793015125489,11,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,10,0,0
+1793015125829,9,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,9,0,0
+1793015126510,9,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,9,0,0
+1793015126841,53,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,53,0,0
+1793015127622,31,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,31,0,1
+1793015127897,25,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,25,0,0
+1793015128337,26,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,26,0,0
+1793015128714,14,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,14,0,0
+1793015129638,18,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,18,0,0
+1793015129628,51,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,51,0,1
+1793015130495,44,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,43,0,1
+1793015130846,17,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,17,0,0
+1793015131674,24,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,23,0,0
+1793015131698,17,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,17,0,0
+1793015132546,11,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,11,0,0
+1793015132730,59,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,59,0,1
+1793015133554,39,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,39,0,1
+1793015133678,14,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,14,0,0
+1793015134546,21,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,21,0,0
+1793015135012,32,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,32,0,0
+1793015135383,45,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,45,0,1
+1793015136120,9,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,9,0,0
+1793015136249,24,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,24,0,0
+1793015137051,64,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,64,0,2
+1793015137150,11,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,11,0,0
+1793015138080,35,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,35,0,1
+1793015138344,9,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,9,0,0
+1793015139281,11,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,11,0,0
+1793015139290,11,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,11,0,0
+1793015140298,23,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,23,0,0
+1793015140335,76,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,76,0,1
+1793015141096,129,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,129,0,2
+1793015141634,53,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,53,0,0
+1793015142269,57,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,57,0,0
+1793015142865,69,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,69,0,0
+1793015143338,35,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,35,0,0
+1793015143580,172,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,171,0,2
+1793015144482,141,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,141,0,2
+1793015144748,74,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,74,0,0
+1793015145375,54,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,53,0,0
+1793015145951,71,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,70,0,0
+1793015146360,33,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,33,0,0
+1793015147268,253,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,253,0,9
+1793015147671,95,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,95,0,1
+1793015148245,19,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,19,0,0
+1793015148304,11,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,11,0,0
+1793015149306,44,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,44,0,0
+1793015149299,51,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,51,0,0
+1793015150050,49,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,49,0,1
+1793015150303,65,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,65,0,0
+1793015150828,15,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,15,0,0
+1793015151229,12,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,12,0,0
+1793015151616,14,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,14,0,0
+1793015152158,8,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,8,0,0
+1793015152746,54,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,54,0,1
+1793015153143,66,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,66,0,2
+1793015154108,23,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,23,0,0
+1793015154205,13,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,12,0,0
+1793015155121,20,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,20,0,0
+1793015155200,23,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,23,0,0
+1793015156038,64,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,64,0,2
+1793015156451,31,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,31,0,1
+1793015156653,15,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,15,0,0
+1793015157290,29,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,29,0,0
+1793015157377,23,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,23,0,0
+1793015157920,67,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,67,0,1
+1793015158647,10,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,10,0,0
+1793015159047,26,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,26,0,0
+1793015159628,58,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,58,0,1
+1793015160367,27,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,26,0,0
+1793015160771,11,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,11,0,0
+1793015161642,47,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,47,0,1
+1793015161811,14,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,13,0,0
+1793015162581,28,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,28,0,0
+1793015162949,9,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,9,0,0
+1793015163225,10,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,10,0,0
+1793015164021,14,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,14,0,0
+1793015164353,14,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,14,0,0
+1793015164928,58,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,57,0,1
+1793015165075,44,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,44,0,1
+1793015165717,20,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,20,0,0
+1793015166097,27,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,27,0,0
+1793015167076,1142,[@Main] Get products,503,,Main 1-1,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,1142,0,0
+1793015167104,1114,[@Main] Get products,503,,Main 1-2,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,1114,0,0
+1793015168996,1087,[@Main] Create new order,500,,Main 1-2,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1086,0,3
+1793015169065,1028,[@Main] Create new order,500,,Main 1-1,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1027,0,0
+1793015171245,62,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,62,0,1
+1793015171441,13,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,13,0,1
+1793015172357,1020,[@Main] Get products,503,,Main 1-2,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,1020,0,0
+1793015172395,1014,[@Main] Get products,503,,Main 1-1,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,1014,0,0
+1793015174272,1027,[@Main] Create new order,500,,Main 1-2,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1027,0,1
+1793015174561,1015,[@Main] Create new order,500,,Main 1-1,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1015,0,1
+1793015176190,28,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,28,0,1
+1793015176568,11,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,11,0,1
+1793015177231,1028,[@Main] Get products,503,,Main 1-2,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,1028,0,0
+1793015177693,1029,[@Main] Get products,503,,Main 1-1,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,1029,0,0
+1793015179697,1047,[@Main] Create new order,500,,Main 1-1,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1046,0,1
+1793015179798,1043,[@Main] Create new order,500,,Main 1-2,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1043,0,1
+1793015181637,27,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,27,0,1
+1793015181916,31,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,31,0,2
+1793015182640,1020,[@Main] Get products,503,,Main 1-1,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,1020,0,0
+1793015182846,1017,[@Main] Get products,503,,Main 1-2,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,1017,0,0
+1793015184697,1053,[@Main] Create new order,500,,Main 1-1,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1053,0,1
+1793015185111,1036,[@Main] Create new order,500,,Main 1-2,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1036,0,2
+1793015186396,22,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,22,0,1
+1793015187544,16,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,16,0,0
+1793015187659,1016,[@Main] Get products,503,,Main 1-1,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,1016,0,0
+1793015188148,1023,[@Main] Get products,503,,Main 1-2,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,1022,0,0
+1793015189796,1059,[@Main] Create new order,500,,Main 1-1,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1059,0,1
+1793015189809,1056,[@Main] Create new order,500,,Main 1-2,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1056,0,1
+1793015191879,27,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,27,0,1
+1793015192002,30,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,30,0,1
+1793015192784,45,[@Main] Get products,503,,Main 1-1,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,45,0,0
+1793015192993,16,[@Main] Get products,503,,Main 1-2,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,16,0,0
+1793015193883,1042,[@Main] Create new order,500,,Main 1-1,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1041,0,2
+1793015194154,1039,[@Main] Create new order,500,,Main 1-2,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1039,0,3
+1793015195690,26,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,26,0,1
+1793015195900,11,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,10,0,1
+1793015196684,14,[@Main] Get products,503,,Main 1-1,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,14,0,0
+1793015196827,9,[@Main] Get products,503,,Main 1-2,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,9,0,0
+1793015197728,1018,[@Main] Create new order,500,,Main 1-1,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1018,0,2
+1793015197805,1012,[@Main] Create new order,500,,Main 1-2,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1011,0,1
+1793015199890,32,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,32,0,3
+1793015199926,21,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,21,0,1
+1793015200900,18,[@Main] Get products,503,,Main 1-1,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,17,0,0
+1793015201150,24,[@Main] Get products,503,,Main 1-2,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,24,0,0
+1793015201949,1031,[@Main] Create new order,500,,Main 1-1,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1031,0,2
+1793015202469,1020,[@Main] Create new order,500,,Main 1-2,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1020,0,1
+1793015203829,44,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,44,0,1
+1793015204112,26,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,26,0,1
+1793015204730,23,[@Main] Get products,503,,Main 1-1,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,23,0,0
+1793015205167,21,[@Main] Get products,503,,Main 1-2,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,21,0,0
+1793015205440,1021,[@Main] Create new order,500,,Main 1-1,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1021,0,0
+1793015206095,1032,[@Main] Create new order,500,,Main 1-2,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1032,0,1
+1793015207380,20,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,20,0,0
+1793015207992,14,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,14,0,1
+1793015208209,27,[@Main] Get products,503,,Main 1-1,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,27,0,0
+1793015208979,39,[@Main] Get products,503,,Main 1-2,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,39,0,0
+1793015209083,1033,[@Main] Create new order,500,,Main 1-1,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1033,0,2
+1793015210972,11,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,11,0,1
+1793015210171,1011,[@Main] Create new order,500,,Main 1-2,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1011,0,1
+1793015211743,23,[@Main] Get products,503,,Main 1-1,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,23,0,0
+1793015212025,30,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,30,0,1
+1793015213576,13,[@Main] Get products,503,,Main 1-2,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,13,0,0
+1793015212894,1027,[@Main] Create new order,500,,Main 1-1,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1027,0,0
+1793015214936,51,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,51,0,2
+1793015214410,1024,[@Main] Create new order,500,,Main 1-2,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1023,0,1
+1793015215752,29,[@Main] Get products,503,,Main 1-1,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,29,0,0
+1793015216246,28,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,28,0,1
+1793015217326,18,[@Main] Get products,503,,Main 1-2,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,18,0,0
+1793015216881,1034,[@Main] Create new order,500,,Main 1-1,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1033,0,1
+1793015218907,19,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,19,0,1
+1793015218490,1032,[@Main] Create new order,500,,Main 1-2,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1032,0,1
+1793015219785,47,[@Main] Get products,503,,Main 1-1,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,47,0,0
+1793015220421,28,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,28,0,1
+1793015221715,18,[@Main] Get products,503,,Main 1-2,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,18,0,0
+1793015221051,1032,[@Main] Create new order,500,,Main 1-1,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1032,0,1
+1793015223302,10,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,10,0,1
+1793015222962,1020,[@Main] Create new order,500,,Main 1-2,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1020,0,3
+1793015223995,8,[@Main] Get products,503,,Main 1-1,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,8,0,0
+1793015225073,28,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,27,0,1
+1793015224914,1029,[@Main] Create new order,500,,Main 1-1,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1029,0,1
+1793015226306,19,[@Main] Get products,503,,Main 1-2,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,19,0,0
+1793015226638,13,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,13,0,1
+1793015227931,27,[@Main] Get products,503,,Main 1-1,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,27,0,0
+1793015227227,1029,[@Main] Create new order,500,,Main 1-2,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1028,0,1
+1793015229273,34,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,34,0,1
+1793015228888,1030,[@Main] Create new order,500,,Main 1-1,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1029,0,2
+1793015230442,9,[@Main] Get products,503,,Main 1-2,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,9,0,0
+1793015231044,36,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,36,0,2
+1793015231758,34,[@Main] Get products,503,,Main 1-1,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,33,0,0
+1793015231274,1031,[@Main] Create new order,500,,Main 1-2,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1031,0,1
+1793015233379,17,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,17,0,1
+1793015232738,1029,[@Main] Create new order,500,,Main 1-1,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1029,0,1
+1793015234401,9,[@Main] Get products,503,,Main 1-2,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,9,0,0
+1793015234916,11,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,11,0,1
+1793015235975,25,[@Main] Get products,503,,Main 1-1,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,25,0,0
+1793015235672,1023,[@Main] Create new order,500,,Main 1-2,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1022,0,2
+1793015236738,1025,[@Main] Create new order,500,,Main 1-1,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1022,0,0
+1793015237830,36,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,36,0,0
+1793015238894,17,[@Main] Get products,503,,Main 1-2,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,17,0,0
+1793015238993,30,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,30,0,1
+1793015239889,20,[@Main] Get products,503,,Main 1-1,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,20,0,0
+1793015239746,1039,[@Main] Create new order,500,,Main 1-2,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1039,0,1
+1793015241734,32,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,32,0,1
+1793015240895,1029,[@Main] Create new order,500,,Main 1-1,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1028,0,1
+1793015242514,10,[@Main] Get products,503,,Main 1-2,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,9,0,0
+1793015242871,17,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,17,0,1
+1793015243892,6,[@Main] Get products,503,,Main 1-1,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,6,0,0
+1793015243302,1032,[@Main] Create new order,500,,Main 1-2,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1032,0,1
+1793015245492,18,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,18,0,1
+1793015244981,1024,[@Main] Create new order,500,,Main 1-1,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1024,0,1
+1793015246469,6,[@Main] Get products,503,,Main 1-2,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,6,0,0
+1793015247406,11,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,11,0,1
+1793015248747,11,[@Main] Get products,503,,Main 1-1,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,11,0,0
+1793015248026,1042,[@Main] Create new order,500,,Main 1-2,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1041,0,1
+1793015249973,22,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,22,0,1
+1793015249397,1039,[@Main] Create new order,500,,Main 1-1,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1038,0,1
+1793015251373,35,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,35,0,2
+1793015251408,12,[@Main] Get products,503,,Main 1-2,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,12,0,0
+1793015252683,15,[@Main] Get products,503,,Main 1-1,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,15,0,0
+1793015252355,1042,[@Main] Create new order,500,,Main 1-2,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1042,0,2
+1793015254168,34,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,34,0,1
+1793015254037,1043,[@Main] Create new order,500,,Main 1-1,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1043,0,1
+1793015255458,11,[@Main] Get products,503,,Main 1-2,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,11,0,0
+1793015256119,39,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,39,0,1
+1793015257227,24,[@Main] Get products,503,,Main 1-1,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,24,0,0
+1793015256259,1029,[@Main] Create new order,500,,Main 1-2,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1029,0,1
+1793015258253,10,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,10,0,0
+1793015258881,8,[@Main] Get products,503,,Main 1-2,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,8,0,0
+1793015258248,1012,[@Main] Create new order,500,,Main 1-1,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1012,0,1
+1793015260122,20,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,20,0,2
+1793015260959,22,[@Main] Get products,503,,Main 1-1,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,22,0,0
+1793015259970,1020,[@Main] Create new order,500,,Main 1-2,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1020,0,1
+1793015261788,25,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,25,0,1
+1793015263081,20,[@Main] Get products,503,,Main 1-2,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,20,0,0
+1793015262256,1038,[@Main] Create new order,500,,Main 1-1,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1037,0,1
+1793015264266,13,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,13,0,1
+1793015264167,1028,[@Main] Create new order,500,,Main 1-2,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1028,0,1
+1793015265640,10,[@Main] Get products,503,,Main 1-1,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,10,0,0
+1793015265832,27,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,27,0,0
+1793015266660,10,[@Main] Get products,503,,Main 1-2,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,10,0,0
+1793015266290,1031,[@Main] Create new order,500,,Main 1-1,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1031,0,1
+1793015268118,16,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,16,0,1
+1793015267572,1042,[@Main] Create new order,500,,Main 1-2,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1042,0,1
+1793015269065,137,[@Main] Get products,503,,Main 1-1,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,132,0,0
+1793015269373,93,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,92,0,1
+1793015270427,74,[@Main] Get products,503,,Main 1-2,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,72,0,0
+1793015270044,1159,[@Main] Create new order,500,,Main 1-1,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1159,0,2
+1793015272260,95,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,95,0,2
+1793015271460,1172,[@Main] Create new order,500,,Main 1-2,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1171,0,4
+1793015273264,128,[@Main] Get products,503,,Main 1-1,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,128,0,0
+1793015273562,163,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,161,0,2
+1793015274669,109,[@Main] Get products,503,,Main 1-2,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,109,0,0
+1793015274757,1537,[@Main] Create new order,500,,Main 1-1,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1536,0,3
+1793015275444,1414,[@Main] Create new order,500,,Main 1-2,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1414,0,3
+1793015277312,98,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,98,0,3
+1793015277949,79,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,79,0,1
+1793015278039,53,[@Main] Get products,503,,Main 1-1,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,53,0,0
+1793015278827,78,[@Main] Get products,503,,Main 1-2,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,78,0,0
+1793015278787,1235,[@Main] Create new order,500,,Main 1-1,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1234,0,3
+1793015280039,1034,[@Main] Create new order,500,,Main 1-2,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1034,0,1
+1793015281185,48,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,48,0,2
+1793015281749,26,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,26,0,1
+1793015282615,41,[@Main] Get products,503,,Main 1-1,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,40,0,0
+1793015282670,9,[@Main] Get products,503,,Main 1-2,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,9,0,0
+1793015283507,1027,[@Main] Create new order,500,,Main 1-2,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1027,0,1
+1793015283635,1033,[@Main] Create new order,500,,Main 1-1,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1032,0,2
+1793015285438,15,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,15,0,1
+1793015285619,26,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,26,0,1
+1793015286085,7,[@Main] Get products,503,,Main 1-2,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,7,0,0
+1793015286493,6,[@Main] Get products,503,,Main 1-1,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,6,0,0
+1793015287399,1024,[@Main] Create new order,500,,Main 1-2,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1024,0,0
+1793015287737,1023,[@Main] Create new order,500,,Main 1-1,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1023,0,0
+1793015289048,22,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,22,0,0
+1793015289322,35,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,35,0,1
+1793015290101,53,[@Main] Get products,503,,Main 1-2,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,53,0,0
+1793015290494,19,[@Main] Get products,503,,Main 1-1,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,19,0,0
+1793015291049,1052,[@Main] Create new order,500,,Main 1-2,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1052,0,1
+1793015291853,1106,[@Main] Create new order,500,,Main 1-1,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1106,0,2
+1793015293046,36,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,36,0,1
+1793015294045,29,[@Main] Get products,503,,Main 1-2,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,29,0,0
+1793015294211,20,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,20,0,1
+1793015294993,30,[@Main] Get products,503,,Main 1-1,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,30,0,0
+1793015295056,1037,[@Main] Create new order,500,,Main 1-2,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1036,0,1
+1793015295893,1034,[@Main] Create new order,500,,Main 1-1,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1034,0,1
+1793015296994,16,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,16,0,1
+1793015297944,11,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,11,0,1
+1793015298003,6,[@Main] Get products,503,,Main 1-2,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,6,0,0
+1793015298802,22,[@Main] Get products,503,,Main 1-1,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,22,0,0
+1793015299134,1028,[@Main] Create new order,500,,Main 1-2,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1028,0,1
+1793015299803,1046,[@Main] Create new order,500,,Main 1-1,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1046,0,1
+1793015301480,32,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,32,0,1
+1793015301724,23,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,22,0,1
+1793015302797,7,[@Main] Get products,503,,Main 1-2,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,7,0,0
+1793015302918,10,[@Main] Get products,503,,Main 1-1,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,9,0,0
+1793015303720,1040,[@Main] Create new order,500,,Main 1-1,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1039,0,1
+1793015303900,1018,[@Main] Create new order,500,,Main 1-2,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1018,0,1
+1793015305989,33,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,33,0,1
+1793015306172,27,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,27,0,1
+1793015307122,19,[@Main] Get products,503,,Main 1-2,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,19,0,0
+1793015307325,15,[@Main] Get products,503,,Main 1-1,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,15,0,0
+1793015307959,1038,[@Main] Create new order,500,,Main 1-1,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1037,0,1
+1793015308208,1024,[@Main] Create new order,500,,Main 1-2,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1023,0,0
+1793015310072,13,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,13,0,1
+1793015310418,10,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,10,0,1
+1793015311186,8,[@Main] Get products,503,,Main 1-1,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,8,0,0
+1793015311439,7,[@Main] Get products,503,,Main 1-2,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,7,0,0
+1793015312262,1044,[@Main] Create new order,500,,Main 1-1,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1044,0,1
+1793015312389,1024,[@Main] Create new order,500,,Main 1-2,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1024,0,1
+1793015314156,52,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,52,0,1
+1793015314212,18,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,18,0,1
+1793015315349,29,[@Main] Get products,503,,Main 1-1,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,29,0,0
+1793015315484,7,[@Main] Get products,503,,Main 1-2,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,6,0,0
+1793015316146,1048,[@Main] Create new order,500,,Main 1-1,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1046,0,1
+1793015316673,1031,[@Main] Create new order,500,,Main 1-2,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1031,0,1
+1793015318162,17,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,17,0,1
+1793015318316,35,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,35,0,1
+1793015319406,14,[@Main] Get products,503,,Main 1-1,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,14,0,0
+1793015319492,9,[@Main] Get products,503,,Main 1-2,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,9,0,0
+1793015320359,1037,[@Main] Create new order,500,,Main 1-1,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1037,0,1
+1793015320678,1027,[@Main] Create new order,500,,Main 1-2,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1027,0,1
+1793015322365,14,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,14,0,2
+1793015322528,16,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,15,0,0
+1793015323315,8,[@Main] Get products,503,,Main 1-1,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,8,0,0
+1793015323356,7,[@Main] Get products,503,,Main 1-2,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,7,0,0
+1793015324106,1043,[@Main] Create new order,500,,Main 1-2,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1043,0,1
+1793015324603,1031,[@Main] Create new order,500,,Main 1-1,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1031,0,1
+1793015325989,10,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,10,0,1
+1793015326759,12,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,12,0,1
+1793015327082,21,[@Main] Get products,503,,Main 1-2,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,21,0,0
+1793015328105,21,[@Main] Get products,503,,Main 1-1,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,21,0,0
+1793015328397,1027,[@Main] Create new order,500,,Main 1-2,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1027,0,1
+1793015328743,1023,[@Main] Create new order,500,,Main 1-1,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1022,0,1
+1793015330623,16,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,16,0,2
+1793015330859,19,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,18,0,1
+1793015331527,14,[@Main] Get products,503,,Main 1-1,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,14,0,0
+1793015331748,17,[@Main] Get products,503,,Main 1-2,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,17,0,0
+1793015332611,1037,[@Main] Create new order,500,,Main 1-2,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1037,0,2
+1793015332657,1022,[@Main] Create new order,500,,Main 1-1,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1022,0,2
+1793015334322,13,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,13,0,1
+1793015334426,10,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,10,0,0
+1793015335493,5,[@Main] Get products,503,,Main 1-2,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,5,0,0
+1793015335531,5,[@Main] Get products,503,,Main 1-1,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,5,0,0
+1793015336133,1044,[@Main] Create new order,500,,Main 1-1,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1043,0,2
+1793015336592,1025,[@Main] Create new order,500,,Main 1-2,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1025,0,1
+1793015338191,36,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,36,0,1
+1793015338884,20,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,20,0,1
+1793015339367,13,[@Main] Get products,503,,Main 1-1,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,13,0,0
+1793015339926,7,[@Main] Get products,503,,Main 1-2,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,7,0,0
+1793015340314,1031,[@Main] Create new order,500,,Main 1-1,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1031,0,1
+1793015340711,1024,[@Main] Create new order,500,,Main 1-2,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1024,0,2
+1793015342437,32,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,32,0,1
+1793015342849,17,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,17,0,2
+1793015343533,14,[@Main] Get products,503,,Main 1-1,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,14,0,0
+1793015344161,19,[@Main] Get products,503,,Main 1-2,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,19,0,0
+1793015344538,1026,[@Main] Create new order,500,,Main 1-1,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1025,0,1
+1793015345293,1031,[@Main] Create new order,500,,Main 1-2,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1031,0,1
+1793015346750,33,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,33,0,1
+1793015347166,18,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,18,0,1
+1793015347928,24,[@Main] Get products,503,,Main 1-1,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,24,0,0
+1793015347952,10,[@Main] Get products,503,,Main 1-2,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,10,0,0
+1793015349043,1025,[@Main] Create new order,500,,Main 1-1,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1022,0,0
+1793015349156,1019,[@Main] Create new order,500,,Main 1-2,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1019,0,1
+1793015351167,26,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,26,0,1
+1793015351255,42,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,42,0,1
+1793015352232,25,[@Main] Get products,503,,Main 1-2,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,25,0,0
+1793015352276,12,[@Main] Get products,503,,Main 1-1,text,false,,895,439,2,2,http://localhost:8080/services/inventory-service/api/products,12,0,0
+1793015353340,1922,[@Main] Create new order,500,,Main 1-2,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1922,0,1
+1793015353342,1929,[@Main] Create new order,500,,Main 1-1,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1928,0,0
+1793015356105,18,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,18,0,2
+1793015356383,25,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,25,0,1
+1793015357201,96,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,96,0,0
+1793015357236,61,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,61,0,0
+1793015358332,1038,[@Main] Create new order,500,,Main 1-1,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1038,0,1
+1793015358377,1015,[@Main] Create new order,500,,Main 1-2,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1015,0,0
+1793015360299,14,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,14,0,1
+1793015360381,10,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,10,0,0
+1793015361396,58,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,58,0,0
+1793015361432,36,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,36,0,0
+1793015362105,1044,[@Main] Create new order,500,,Main 1-1,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1044,0,3
+1793015362516,1023,[@Main] Create new order,500,,Main 1-2,text,false,,1097,838,2,2,http://localhost:8080/services/order-service/api/orders,1022,0,1
+1793015363965,38,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,38,0,1
+1793015364531,16,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,16,0,1
+1793015364843,43,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,43,0,0
+1793015365358,47,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,47,0,0
+1793015365745,148,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,148,0,2
+1793015366605,72,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,72,0,1
+1793015366927,18,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,18,0,0
+1793015367994,14,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,14,0,0
+1793015368169,45,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,45,0,0
+1793015368751,63,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,60,0,0
+1793015369281,85,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,85,0,0
+1793015369475,66,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,66,0,1
+1793015370202,22,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,22,0,0
+1793015370491,12,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,12,0,0
+1793015371159,53,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,53,0,0
+1793015371243,25,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,25,0,0
+1793015372022,70,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,70,0,1
+1793015372171,59,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,59,0,1
+1793015373165,11,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,11,0,0
+1793015373556,12,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,12,0,0
+1793015374228,45,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,45,0,0
+1793015374442,28,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,28,0,0
+1793015374792,165,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,165,0,0
+1793015375477,106,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,106,0,1
+1793015376078,24,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,24,0,0
+1793015376461,19,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,19,0,0
+1793015377253,43,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,43,0,0
+1793015377300,21,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,21,0,0
+1793015378134,70,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,70,0,1
+1793015378413,60,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,60,0,1
+1793015379255,31,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,31,0,0
+1793015379346,12,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,12,0,0
+1793015380416,45,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,45,0,0
+1793015380394,67,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,67,0,0
+1793015381601,84,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,84,0,1
+1793015381776,61,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,61,0,0
+1793015382599,13,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,13,0,0
+1793015383029,33,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,32,0,0
+1793015383607,38,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,38,0,0
+1793015384035,55,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,55,0,0
+1793015384673,84,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,84,0,2
+1793015384926,76,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,76,0,1
+1793015385593,11,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,11,0,0
+1793015385740,11,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,11,0,0
+1793015386623,19,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,19,0,0
+1793015386846,70,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,69,0,0
+1793015387639,116,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,116,0,1
+1793015388107,66,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,66,0,1
+1793015388658,29,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,29,0,0
+1793015389253,27,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,27,0,0
+1793015389886,30,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,30,0,0
+1793015390023,18,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,18,0,0
+1793015391208,78,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,78,0,1
+1793015391313,46,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,46,0,0
+1793015392279,28,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,28,0,0
+1793015392345,20,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,20,0,0
+1793015392997,19,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,19,0,0
+1793015393319,14,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,14,0,0
+1793015393720,113,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,113,0,4
+1793015393915,58,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,58,0,0
+1793015394782,17,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,17,0,0
+1793015394906,16,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,16,0,0
+1793015395586,24,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,24,0,0
+1793015395816,39,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,39,0,0
+1793015396574,55,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,55,0,1
+1793015396703,61,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,61,0,1
+1793015397541,21,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,21,0,0
+1793015397691,28,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,28,0,0
+1793015398685,21,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,21,0,0
+1793015398792,137,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,137,0,0
+1793015399588,63,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,58,0,1
+1793015399881,251,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,251,0,0
+1793015400552,64,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,64,0,0
+1793015401017,184,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,181,0,0
+1793015401194,63,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,62,0,0
+1793015402247,211,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,211,0,0
+1793015402350,285,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,285,0,3
+1793015403425,140,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,140,0,0
+1793015403482,386,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,386,0,5
+1793015404368,84,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,83,0,0
+1793015404482,53,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,53,0,0
+1793015405745,107,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,106,0,0
+1793015405515,456,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,456,0,2
+1793015407052,154,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,154,0,0
+1793015406864,482,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,482,0,6
+1793015408251,265,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,265,0,0
+1793015408675,103,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,103,0,0
+1793015409152,130,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,130,0,0
+1793015409737,460,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,459,0,2
+1793015410526,709,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,709,0,2
+1793015411240,166,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,154,0,0
+1793015412132,90,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,90,0,0
+1793015412371,260,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,259,0,0
+1793015413574,64,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,64,0,0
+1793015413643,128,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,128,0,3
+1793015414816,37,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,37,0,0
+1793015414981,81,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,81,0,2
+1793015416140,34,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,33,0,0
+1793015416135,45,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,45,0,0
+1793015416917,63,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,63,0,0
+1793015417190,96,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,96,0,1
+1793015418013,13,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,13,0,0
+1793015418014,44,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,44,0,1
+1793015418951,29,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,29,0,0
+1793015419061,38,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,37,0,0
+1793015419891,28,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,28,0,0
+1793015420296,78,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,77,0,1
+1793015420679,43,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,43,0,1
+1793015421320,24,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,24,0,0
+1793015422161,28,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,28,0,0
+1793015422467,31,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,31,0,0
+1793015423436,59,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,59,0,1
+1793015423514,11,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,11,0,0
+1793015424281,130,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,130,0,1
+1793015424519,12,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,12,0,0
+1793015425365,23,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,23,0,0
+1793015425535,13,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,13,0,0
+1793015426302,68,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,68,0,1
+1793015426746,33,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,33,0,0
+1793015427467,29,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,29,0,0
+1793015428126,89,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,89,0,1
+1793015428587,25,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,25,0,0
+1793015429281,21,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,20,0,0
+1793015429720,95,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,95,0,1
+1793015430571,24,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,24,0,0
+1793015430772,10,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,10,0,0
+1793015431659,113,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,113,0,2
+1793015431802,14,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,14,0,0
+1793015432619,28,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,28,0,0
+1793015433088,85,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,85,0,1
+1793015433756,29,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,29,0,0
+1793015434081,24,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,24,0,0
+1793015434608,16,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,16,0,0
+1793015434604,47,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,47,0,1
+1793015435720,69,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,69,0,2
+1793015435808,9,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,9,0,0
+1793015436646,22,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,22,0,0
+1793015436670,13,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,13,0,0
+1793015437890,13,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,13,0,0
+1793015437919,46,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,46,0,0
+1793015438877,70,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,70,0,1
+1793015439004,9,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,9,0,0
+1793015439807,38,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,38,0,0
+1793015439868,17,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,17,0,0
+1793015440692,119,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,119,0,1
+1793015440813,28,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,26,0,0
+1793015441714,33,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,33,0,0
+1793015441970,68,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,68,0,0
+1793015443011,40,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,40,0,0
+1793015443071,67,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,67,0,0
+1793015444063,41,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,40,0,0
+1793015444181,79,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,79,0,1
+1793015445160,25,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,25,0,0
+1793015445095,104,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,104,0,2
+1793015445921,17,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,17,0,0
+1793015446135,30,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,30,0,0
+1793015446782,64,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,64,0,0
+1793015447187,104,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,104,0,0
+1793015447590,54,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,54,0,1
+1793015448025,31,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,31,0,0
+1793015448728,18,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,18,0,0
+1793015449209,14,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,14,0,0
+1793015449927,13,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,13,0,0
+1793015450015,44,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,44,0,1
+1793015451112,51,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,51,0,1
+1793015451224,10,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,10,0,0
+1793015452246,29,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,29,0,0
+1793015452543,22,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,22,0,0
+1793015453419,70,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,70,0,0
+1793015453575,15,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,15,0,0
+1793015454306,25,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,25,0,0
+1793015455008,77,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,76,0,1
+1793015455519,30,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,30,0,0
+1793015455953,30,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,30,0,0
+1793015456234,81,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,81,0,1
+1793015456682,24,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,24,0,0
+1793015457262,27,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,27,0,0
+1793015457711,76,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,76,0,1
+1793015458608,17,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,17,0,0
+1793015458718,18,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,18,0,0
+1793015459530,18,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,18,0,0
+1793015459793,88,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,87,0,1
+1793015460491,56,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,55,0,1
+1793015460606,13,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,13,0,0
+1793015461219,17,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,17,0,0
+1793015461381,18,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,18,0,0
+1793015462182,56,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,56,0,1
+1793015462607,27,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,27,0,0
+1793015462928,22,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,22,0,0
+1793015463927,35,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,35,0,0
+1793015463894,95,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,95,0,1
+1793015464886,92,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,92,0,1
+1793015465131,14,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,14,0,0
+1793015466077,25,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,25,0,0
+1793015466260,24,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,24,0,0
+1793015466733,69,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,69,0,1
+1793015467453,34,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,34,0,0
+1793015467856,28,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,27,0,0
+1793015468064,63,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,63,0,1
+1793015469018,29,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,29,0,0
+1793015469131,41,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,41,0,0
+1793015470111,67,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,67,0,1
+1793015470428,25,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,25,0,0
+1793015471247,71,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,71,0,1
+1793015471425,9,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,9,0,0
+1793015472329,27,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,27,0,0
+1793015472323,38,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,38,0,0
+1793015473505,47,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,47,0,1
+1793015473679,11,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,11,0,0
+1793015474448,51,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,51,0,1
+1793015474661,22,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,22,0,0
+1793015475314,65,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,65,0,0
+1793015475700,38,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,38,0,0
+1793015476635,21,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,21,0,0
+1793015476880,57,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,57,0,2
+1793015478066,25,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,25,0,0
+1793015478124,44,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,44,0,0
+1793015479142,31,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,30,0,0
+1793015479169,27,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,27,0,0
+1793015480042,46,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,46,0,1
+1793015480596,16,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,16,0,0
+1793015481158,19,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,19,0,0
+1793015481592,58,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,58,0,1
+1793015482190,32,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,32,0,0
+1793015482587,14,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,14,0,0
+1793015483339,44,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,44,0,1
+1793015483888,34,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,34,0,0
+1793015484442,24,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,24,0,0
+1793015484646,47,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,47,0,0
+1793015485283,14,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,14,0,0
+1793015485855,12,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,12,0,0
+1793015486015,12,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,12,0,0
+1793015486908,54,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,54,0,0
+1793015487130,59,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,59,0,1
+1793015488072,26,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,26,0,0
+1793015488359,25,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,25,0,0
+1793015488856,12,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,12,0,0
+1793015489326,20,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,20,0,0
+1793015490090,61,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,61,0,0
+1793015490525,106,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,106,0,1
+1793015490967,29,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,29,0,0
+1793015491173,13,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,13,0,0
+1793015492244,41,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,41,0,0
+1793015492514,14,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,14,0,0
+1793015493451,69,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,69,0,0
+1793015493764,80,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,80,0,1
+1793015494497,34,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,34,0,0
+1793015495102,39,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,39,0,0
+1793015495328,19,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,18,0,0
+1793015495761,77,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,77,0,2
+1793015496013,23,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,23,0,0
+1793015496587,39,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,39,0,1
+1793015496855,9,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,9,0,0
+1793015497783,10,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,10,0,0
+1793015497974,13,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,13,0,0
+1793015498414,15,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,15,0,0
+1793015498920,69,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,69,0,1
+1793015499566,65,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,65,0,1
+1793015499954,31,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,31,0,0
+1793015500699,15,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,14,0,0
+1793015500979,20,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,20,0,0
+1793015501617,29,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,29,0,0
+1793015501904,75,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,75,0,1
+1793015502821,45,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,45,0,2
+1793015503103,20,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,20,0,0
+1793015504048,32,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,32,0,0
+1793015504060,22,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,22,0,0
+1793015505050,70,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,70,0,1
+1793015505280,26,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,26,0,0
+1793015506260,21,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,21,0,0
+1793015506241,75,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,75,0,1
+1793015507011,19,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,19,0,0
+1793015507145,26,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,26,0,0
+1793015507856,42,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,42,0,0
+1793015507912,68,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,68,0,3
+1793015508642,11,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,11,0,0
+1793015508653,44,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,44,0,0
+1793015509676,12,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,12,0,0
+1793015509700,10,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,10,0,0
+1793015510179,50,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,50,0,0
+1793015510558,13,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,13,0,0
+1793015510733,16,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,16,0,0
+1793015511887,27,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,27,0,0
+1793015511848,86,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,86,0,1
+1793015512713,15,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,14,0,0
+1793015512868,56,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,56,0,1
+1793015513430,28,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,28,0,0
+1793015513908,25,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,25,0,0
+1793015514027,77,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,77,0,1
+1793015514968,28,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,28,0,0
+1793015515121,24,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,24,0,0
+1793015515593,31,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,31,0,0
+1793015516171,41,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,41,0,0
+1793015517030,32,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,32,0,0
+1793015516995,96,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,96,0,2
+1793015518196,36,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,36,0,0
+1793015518269,23,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,23,0,0
+1793015519195,45,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,44,0,0
+1793015519501,43,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,43,0,1
+1793015519995,80,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,80,0,1
+1793015520506,14,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,14,0,0
+1793015521123,10,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,10,0,0
+1793015521686,12,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,12,0,0
+1793015521964,12,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,12,0,0
+1793015522520,56,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,55,0,1
+1793015522907,62,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,62,0,0
+1793015523635,34,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,34,0,0
+1793015523918,31,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,31,0,0
+1793015524643,20,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,20,0,0
+1793015524757,40,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,38,0,0
+1793015525385,64,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,64,0,1
+1793015525736,59,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,59,0,1
+1793015526363,16,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,16,0,0
+1793015526405,13,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,13,0,0
+1793015527061,33,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,33,0,0
+1793015527409,35,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,35,0,0
+1793015528255,81,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,81,0,1
+1793015528615,39,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,39,0,1
+1793015529407,25,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,25,0,0
+1793015529750,38,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,38,0,0
+1793015530181,28,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,28,0,0
+1793015530659,16,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,16,0,0
+1793015531332,81,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,81,0,1
+1793015531701,44,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,43,0,1
+1793015532473,22,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,22,0,0
+1793015533046,20,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,20,0,0
+1793015533443,14,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,14,0,0
+1793015534158,136,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,136,0,0
+1793015534539,262,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,262,0,1
+1793015535094,280,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,277,0,3
+1793015535897,160,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,158,0,0
+1793015536144,67,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,64,0,0
+1793015536942,124,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,124,0,0
+1793015537293,75,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,74,0,0
+1793015538250,529,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,528,0,7
+1793015538562,234,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,233,0,1
+1793015539394,109,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,109,0,0
+1793015540081,65,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,65,0,0
+1793015540357,153,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,152,0,0
+1793015541321,124,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,123,0,0
+1793015541485,353,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,351,0,9
+1793015542203,443,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,440,0,1
+1793015542917,69,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,68,0,0
+1793015543657,86,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,86,0,0
+1793015544109,128,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,127,0,0
+1793015544545,50,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,49,0,0
+1793015545243,404,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,404,0,6
+1793015545724,127,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,127,0,1
+1793015546696,29,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,29,0,0
+1793015546758,24,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,24,0,0
+1793015547709,57,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,57,0,0
+1793015547751,69,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,69,0,0
+1793015548797,122,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,122,0,1
+1793015548812,107,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,107,0,1
+1793015549712,31,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,31,0,0
+1793015550009,18,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,18,0,0
+1793015550532,25,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,25,0,0
+1793015550756,14,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,14,0,0
+1793015551647,86,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,86,0,1
+1793015551875,44,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,44,0,1
+1793015552552,17,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,17,0,0
+1793015553244,25,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,25,0,0
+1793015553845,36,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,36,0,0
+1793015554320,19,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,19,0,0
+1793015554688,84,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,84,0,1
+1793015555263,112,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,112,0,1
+1793015555820,29,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,29,0,0
+1793015556656,16,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,16,0,0
+1793015556851,21,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,21,0,0
+1793015557576,25,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,25,0,0
+1793015557699,71,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,71,0,1
+1793015558760,45,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,45,0,1
+1793015558866,14,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,14,0,0
+1793015559672,18,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,18,0,0
+1793015559826,22,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,19,0,0
+1793015560453,15,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,15,0,0
+1793015560989,51,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,51,0,0
+1793015561588,184,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,184,0,1
+1793015562348,14,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,14,0,0
+1793015562692,23,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,23,0,0
+1793015563505,45,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,45,0,0
+1793015563706,59,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,59,0,0
+1793015564611,91,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,91,0,2
+1793015564857,55,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,55,0,1
+1793015565588,44,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,44,0,0
+1793015565848,30,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,30,0,0
+1793015566549,17,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,17,0,0
+1793015566808,12,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,12,0,0
+1793015567245,86,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,86,0,1
+1793015567683,78,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,78,0,1
+1793015568458,35,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,35,0,0
+1793015568515,15,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,15,0,0
+1793015569610,16,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,16,0,0
+1793015569775,23,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,23,0,0
+1793015570445,42,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,42,0,2
+1793015570611,47,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,47,0,1
+1793015571681,28,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,28,0,0
+1793015571769,31,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,31,0,0
+1793015572748,23,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,23,0,0
+1793015572955,12,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,12,0,0
+1793015573405,39,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,39,0,0
+1793015573980,81,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,81,0,1
+1793015574381,11,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,11,0,0
+1793015575080,23,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,23,0,0
+1793015575339,39,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,39,0,0
+1793015576223,42,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,42,0,0
+1793015576354,41,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,41,0,1
+1793015577125,16,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,16,0,0
+1793015577348,68,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,68,0,1
+1793015578077,11,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,11,0,0
+1793015578239,32,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,32,0,0
+1793015579095,27,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,27,0,0
+1793015579305,42,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,42,0,1
+1793015580185,80,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,80,0,1
+1793015580442,24,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,24,0,0
+1793015581268,30,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,29,0,0
+1793015581462,15,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,15,0,0
+1793015582117,55,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,55,0,1
+1793015582566,15,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,15,0,0
+1793015583489,17,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,17,0,0
+1793015583446,74,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,74,0,1
+1793015584360,23,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,23,0,0
+1793015584549,15,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,15,0,0
+1793015585264,10,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,10,0,0
+1793015585313,48,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,48,0,0
+1793015586275,41,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,41,0,1
+1793015586312,12,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,12,0,0
+1793015587259,37,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,37,0,0
+1793015587455,31,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,31,0,0
+1793015588346,78,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,78,0,1
+1793015588805,13,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,13,0,0
+1793015589515,14,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,14,0,0
+1793015589970,53,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,53,0,2
+1793015590570,16,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,16,0,0
+1793015590871,12,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,12,0,0
+1793015591503,35,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,35,0,0
+1793015591622,42,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,42,0,1
+1793015592453,20,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,20,0,0
+1793015592561,63,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,63,0,0
+1793015593574,16,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,16,0,0
+1793015593894,35,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,34,0,0
+1793015594632,17,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,17,0,0
+1793015594820,46,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,46,0,1
+1793015595845,38,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,38,0,0
+1793015596055,43,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,43,0,1
+1793015596804,12,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,12,0,0
+1793015597532,11,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,11,0,0
+1793015597705,45,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,45,0,1
+1793015598520,24,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,24,0,0
+1793015598876,12,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,12,0,0
+1793015599656,67,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,67,0,1
+1793015600280,32,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,32,0,0
+1793015601004,32,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,32,0,0
+1793015601347,67,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,67,0,1
+1793015602209,21,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,21,0,0
+1793015602536,13,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,13,0,0
+1793015603470,118,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,118,0,1
+1793015603582,11,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,11,0,0
+1793015604645,17,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,17,0,0
+1793015604771,43,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,43,0,0
+1793015605742,40,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,40,0,0
+1793015605921,18,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,18,0,0
+1793015606887,24,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,24,0,0
+1793015606954,65,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,65,0,1
+1793015607959,35,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,35,0,0
+1793015608190,25,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,25,0,0
+1793015608879,9,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,9,0,0
+1793015608959,14,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,13,0,0
+1793015609644,11,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,11,0,0
+1793015609750,42,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,41,0,1
+1793015610653,50,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,50,0,0
+1793015610712,8,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,8,0,0
+1793015611593,19,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,19,0,0
+1793015611869,12,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,12,0,0
+1793015612403,62,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,62,0,1
+1793015613173,34,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,34,0,0
+1793015613321,24,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,24,0,0
+1793015614462,16,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,16,0,0
+1793015614444,58,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,58,0,0
+1793015615274,54,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,54,0,1
+1793015615470,9,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,9,0,0
+1793015616321,33,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,33,0,0
+1793015616354,19,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,19,0,0
+1793015617444,55,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,55,0,0
+1793015617733,28,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,28,0,0
+1793015618706,21,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,21,0,0
+1793015618903,62,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,62,0,1
+1793015619263,40,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,40,0,0
+1793015619992,13,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,13,0,0
+1793015620017,36,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,36,0,1
+1793015621168,12,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,12,0,0
+1793015621440,9,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,9,0,0
+1793015621928,102,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,102,0,0
+1793015622203,15,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,15,0,0
+1793015623163,30,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,30,0,0
+1793015623397,67,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,67,0,1
+1793015623875,29,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,29,0,0
+1793015624637,17,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,17,0,0
+1793015625062,77,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,77,0,1
+1793015625417,13,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,13,0,0
+1793015626318,68,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,68,0,1
+1793015626411,9,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,9,0,0
+1793015627434,30,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,30,0,0
+1793015627525,15,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,15,0,0
+1793015628671,15,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,15,0,0
+1793015628699,41,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,41,0,0
+1793015629873,25,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,25,0,0
+1793015630084,70,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,70,0,1
+1793015631074,23,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,23,0,0
+1793015631202,35,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,35,0,0
+1793015632137,25,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,25,0,0
+1793015632397,55,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,55,0,2
+1793015633384,45,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,45,0,1
+1793015633591,10,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,10,0,0
+1793015634414,21,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,21,0,0
+1793015634535,9,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,9,0,0
+1793015635135,86,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,86,0,1
+1793015635643,31,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,31,0,0
+1793015636211,25,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,25,0,0
+1793015636688,49,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,49,0,1
+1793015637320,24,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,24,0,0
+1793015637686,18,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,18,0,0
+1793015638618,51,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,51,0,1
+1793015638857,13,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,13,0,0
+1793015639806,33,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,33,0,0
+1793015639920,79,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,79,0,1
+1793015641085,31,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,31,0,0
+1793015641116,20,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,20,0,0
+1793015641898,72,[@Main] Create new order,200,,Main 1-1,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,72,0,1
+1793015642010,10,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,10,0,0
+1793015642800,49,[@Main] Create new order,200,,Main 1-2,text,true,,1465,838,2,2,http://localhost:8080/services/order-service/api/orders,49,0,0
+1793015643082,27,[@Main] Get payments,200,,Main 1-1,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,27,0,0
+1793015643602,17,[@Main] Get payments,200,,Main 1-2,text,true,,4111,444,2,2,http://localhost:8080/services/payment-service/api/payments?page=1,17,0,0
+1793015643878,18,[@Main] Get products,200,,Main 1-1,text,true,,4167,439,2,2,http://localhost:8080/services/inventory-service/api/products,18,0,0
+1793015644937,14,[@Main] Get products,200,,Main 1-2,text,true,,4167,439,1,1,http://localhost:8080/services/inventory-service/api/products,14,0,0
