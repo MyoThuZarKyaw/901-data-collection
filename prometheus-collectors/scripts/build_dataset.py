@@ -7,8 +7,8 @@ import numpy as np
 # ==============================================================================
 # 1. CONFIGURATION
 # ==============================================================================
-DATA_DIR = "./raw_data"  # Folder containing your 20 CSV files
-OUTPUT_FILE = "master_dataset.csv"
+DATA_DIR = "outputs"  # Folder containing your 20 CSV files
+OUTPUT_FILE = "master-data/master_dataset-x001.csv"
 
 # Step size is 2 seconds
 STEP_30S = 15  # 15 rows = 30 seconds
@@ -28,75 +28,75 @@ def get_sort_key(filepath):
 
 
 def compute_raw_state(df):
-    """
-    Classifies the instantaneous state of the service:
-    2 = Failed   (Latency > 1000ms OR Errors > 15% OR Container Dead)
-    1 = Degraded (Latency > 300ms OR Errors > 3% OR Memory > 85% with positive slope OR CPU > 70%)
-    0 = Healthy  (Normal operating parameters)
-    """
     conditions = [
         # State 2: Failed
         (df["target_latency"] > 1000.0) |
         (df["target_error_rate"] > 0.15) |
         (df["target_live_threads"] == 0),
 
-        # State 1: Degraded (Note: Memory only triggers if >85% AND actively climbing!)
+        # State 1: Degraded
         (df["target_latency"] > 300.0) |
         (df["target_error_rate"] > 0.03) |
         ((df["target_mem"] > 0.85) & (df["mem_delta_60s"] > 0.02)) |
         (df["target_cpu"] > 70.0)
     ]
-    choices = [2, 1]
-    return np.select(conditions, choices, default=0)
+    return np.select(conditions, [2, 1], default=0)
 
+def get_service_from_filename(filename):
+    if "payment_service" in filename.lower():
+        return "payment_service"
+    
+    if "inventory_service" in filename.lower():
+        return "inventory_service"
+
+    if "order_service" in filename.lower():
+        return "order_service"
 
 def process_single_experiment(filepath):
-    """Processes a single experiment CSV with temporal features and 3-state target."""
     filename = os.path.basename(filepath)
     df = pd.read_csv(filepath)
 
     if df.empty or len(df) < STEP_60S:
-        print(f"  [!] Skipping {filename} (insufficient rows: {len(df)})")
         return None
 
     df["timestamp"] = df["timestamp"].astype(int)
     df = df.sort_values(by="timestamp").reset_index(drop=True)
 
-    # Metadata
     match = re.search(r'exp(\d+)', filename, re.IGNORECASE)
     df["experiment_id"] = int(match.group(1)) if match else 0
-    df["service_name"] = "payment_service" if "payment" in filename.lower() else "inventory_service"
+    df["service_name"] = get_service_from_filename(filename) #"payment_service" if "payment" in filename.lower() else "inventory_service"
     df["source_file"] = filename
 
-    # ==========================================================================
-    # 2. FEATURE ENGINEERING (Deltas, Rolling Stats, Volatility)
-    # ==========================================================================
+    # A. Velocity & Slopes
     df["latency_delta_30s"] = df["target_latency"] - df["target_latency"].shift(STEP_30S)
     df["latency_delta_60s"] = df["target_latency"] - df["target_latency"].shift(STEP_60S)
     df["mem_delta_60s"] = df["target_mem"] - df["target_mem"].shift(STEP_60S)
     df["cpu_delta_30s"] = df["target_cpu"] - df["target_cpu"].shift(STEP_30S)
     df["throughput_delta_30s"] = df["target_throughput"] - df["target_throughput"].shift(STEP_30S)
 
+    # B. Rolling Statistics
     df["latency_rolling_mean_1m"] = df["target_latency"].rolling(window=STEP_60S).mean()
     df["latency_std_1m"] = df["target_latency"].rolling(window=STEP_60S).std().fillna(0)
     df["throughput_rolling_mean_1m"] = df["target_throughput"].rolling(window=STEP_60S).mean()
     df["active_req_rolling_mean_1m"] = df["target_active_requests"].rolling(window=STEP_60S).mean()
     df["latency_accel_30s"] = df["latency_delta_30s"] - df["latency_delta_30s"].shift(STEP_30S)
 
-    # ==========================================================================
-    # 3. PROACTIVE 3-STATE LOOKAHEAD TARGET (y)
-    # ==========================================================================
-    # Compute instantaneous state: 0, 1, or 2
+    # C. Relative Ratios (NEW: Boosts tree separation)
+    df["latency_surge_ratio"] = df["target_latency"] / (df["latency_rolling_mean_1m"] + 1e-5)
+    df["thread_pressure_ratio"] = df["target_active_requests"] / (df["target_live_threads"] + 1e-5)
+    df["latency_zscore"] = (df["target_latency"] - df["latency_rolling_mean_1m"]) / (df["latency_std_1m"] + 1e-5)
+
+    # D. Sustained Lookahead Label (NEW: Eliminates 1-point transient blip noise)
     raw_state = compute_raw_state(df)
 
-    # Mathematical rolling max on reversed array finds the worst-case future state
-    # (Since 2 > 1 > 0, max automatically picks Failed over Degraded over Healthy)
-    future_state = pd.Series(raw_state).iloc[::-1].rolling(window=LOOK_AHEAD_STEPS, min_periods=1).max().iloc[::-1]
+    # Require state to be sustained for >= 2 consecutive points to count
+    state_series = pd.Series(raw_state)
+    sustained_state = state_series.rolling(window=2).min().fillna(0).astype(int)
 
-    # Shift forward by 5 steps (10 seconds minimum lead-time warning)
-    df["proactive_state"] = future_state.shift(-5).fillna(0).astype(int)
+    # Forward-looking rolling max
+    future_state = sustained_state.iloc[::-1].rolling(window=LOOK_AHEAD_STEPS, min_periods=1).max().iloc[::-1]
+    df["proactive_state"] = future_state.shift(-4).fillna(0).astype(int)
 
-    # Drop initial NaNs from 60s lag window
     df = df.dropna().reset_index(drop=True)
     return df
 

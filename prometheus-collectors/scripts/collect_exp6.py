@@ -1,60 +1,80 @@
 import os
 import requests
 import pandas as pd
-from datetime import datetime
+from datetime import datetime, timezone
+from pathlib import Path
 
 # ==============================================================================
-# 1. CONFIGURATION FOR EXPERIMENT 6
+# 1. CONFIGURATION
 # ==============================================================================
 PROMETHEUS_URL = "http://localhost:9090/api/v1/query_range"
-TARGET_SERVICE = "payment_service" #   inventory_service or payment_service
-STEP = "2s"
 
-# Update with your Experiment 6 timestamps
-START_TIME_STR = "2026-09-18 15:12:37"  # <--- UPDATE THIS
-END_TIME_STR = "2026-09-18 15:22:37"  # <--- UPDATE THIS
+def get_quries(service_name):
+    return  {
+        # CPU
+        "target_cpu": f'otel_process_cpu_usage{{application="{service_name}"}} * 100',
 
-OUTPUT_FILE = "raw_data/exp6_memory_pressure_payment.csv"  # exp6_memory_pressure_inventory or exp6_memory_pressure_payment
+        # Memory (used / committed avoids the 3-pool heap split issue)
+        "target_mem": f'sum(otel_jvm_memory_used_bytes{{area="heap", application="{service_name}"}}) / sum(otel_jvm_memory_max_bytes{{area="heap", application="{service_name}"}} > 0)',
 
+        # Throughput, Latency, and Error Rate (using 1m rate window)
+        "target_throughput": f'sum(rate(otel_http_server_requests_milliseconds_count{{application="{service_name}"}}[1m]))',
+        "target_latency": f'sum(rate(otel_http_server_requests_milliseconds_sum{{application="{service_name}"}}[1m])) / sum(rate(otel_http_server_requests_milliseconds_count{{application="{service_name}"}}[1m]))',
+        "target_error_rate": f'sum(rate(otel_http_server_requests_milliseconds_count{{application="{service_name}", status=~"5.."}}[1m])) / sum(rate(otel_http_server_requests_milliseconds_count{{application="{service_name}"}}[1m]))',
+
+        # Threads & Active requests
+        "target_live_threads": f'otel_jvm_threads_live{{application="{service_name}"}}',
+        "target_active_requests": f'sum(otel_http_server_requests_active_milliseconds_count{{application="{service_name}"}})'
+    }
+
+def get_output_filepath(service_name, start_ms):
+    output_path = Path(f"outputs/Exp006_{service_name}_{ms_to_utc_compact(start_ms)}.csv")
+    # Create parent directories if they don't exist
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    return output_path
+
+def timestamp_utc(ms: int) -> str:
+    # Convert milliseconds to seconds and create a datetime object in UTC
+    dt = datetime.fromtimestamp(ms / 1000.0, tz=timezone.utc)
+    # Format to 'YYYY-MM-DD HH:MM:SS'
+    return dt.strftime("%Y-%m-%d %H:%M:%S")
+    # Example usage:
+    # ts = 1793003135039
+    # print(format_timestamp_utc(ts))
+    # Output: 2026-10-26 08:25:35
+
+def ms_to_utc_compact(ms: int) -> str:
+    """Convert timestamp in milliseconds to UTC format:
+
+    YYYYMMDD_HHMMSS (e.g., 20261027_033546)
+    """
+    dt = datetime.fromtimestamp(ms / 1000.0, tz=timezone.utc)
+    return dt.strftime("%Y%m%d_%H%M%S")
+    # Example usage:
+    # # A timestamp around Oct 27, 2026 at 03:35:46 UTC
+    # ts_ms = 1793072146000
+    # formatted_date = ms_to_utc_compact(ts_ms)
+
+    # print(formatted_date)
+    # # Output: 20261027_033546
 
 # ==============================================================================
-# 2. TIMESTAMP CONVERSION
+# 4. EXTRACTION LOGIC
 # ==============================================================================
-start_dt = datetime.strptime(START_TIME_STR, "%Y-%m-%d %H:%M:%S")
-end_dt = datetime.strptime(END_TIME_STR, "%Y-%m-%d %H:%M:%S")
-
-START_TS = int(start_dt.timestamp())
-END_TS = int(end_dt.timestamp())
-
-# ==============================================================================
-# 3. QUERIES
-# ==============================================================================
-QUERIES = {
-    "target_cpu": f'avg(otel_process_cpu_usage{{application="{TARGET_SERVICE}"}}) * 100',
-    "target_mem": f'sum(otel_jvm_memory_used_bytes{{area="heap", application="{TARGET_SERVICE}"}}) / sum(otel_jvm_memory_max_bytes{{area="heap", application="{TARGET_SERVICE}"}} > 0)',
-    "target_throughput": f'sum(rate(otel_http_server_requests_milliseconds_count{{application="{TARGET_SERVICE}"}}[1m]))',
-    "target_latency": f'sum(rate(otel_http_server_requests_milliseconds_sum{{application="{TARGET_SERVICE}"}}[1m])) / sum(rate(otel_http_server_requests_milliseconds_count{{application="{TARGET_SERVICE}"}}[1m]))',
-    "target_error_rate": f'sum(rate(otel_http_server_requests_milliseconds_count{{application="{TARGET_SERVICE}", status=~"5.."}}[1m])) / sum(rate(otel_http_server_requests_milliseconds_count{{application="{TARGET_SERVICE}"}}[1m]))',
-    "target_live_threads": f'max(otel_jvm_threads_live{{application="{TARGET_SERVICE}"}})',
-    "target_active_requests": f'sum(otel_http_server_requests_active_milliseconds_count{{application="{TARGET_SERVICE}"}})'
-}
-
-
-# ==============================================================================
-# 4. EXTRACTION ENGINE
-# ==============================================================================
-def fetch_series(query_name, query_str):
+def fetch_series(query_name, query_str, start_ms, end_ms, step = '2s'):
     params = {
         "query": query_str,
-        "start": START_TS,
-        "end": END_TS,
-        "step": STEP
+        "start":  start_ms / 1000.0,
+        "end": end_ms / 1000.0,
+        "step": step
     }
     try:
         res = requests.get(PROMETHEUS_URL, params=params, timeout=15)
         res.raise_for_status()
         data = res.json().get("data", {}).get("result", [])
-
+        
+        if query_name == "target_error_rate":
+            print(res.json())
         if not data:
             print(f"  [WARN] No data for: {query_name}")
             return pd.Series(dtype=float)
@@ -63,13 +83,13 @@ def fetch_series(query_name, query_str):
         df_temp = pd.DataFrame(values, columns=["timestamp", query_name])
         df_temp["timestamp"] = df_temp["timestamp"].astype(int)
         df_temp[query_name] = pd.to_numeric(df_temp[query_name], errors="coerce")
+
+        print(f"  [OK] {query_name}: {len(df_temp)} points")
         return df_temp.set_index("timestamp")[query_name]
 
     except Exception as e:
         print(f"  [ERROR] {query_name}: {e}")
         return pd.Series(dtype=float)
-
-
 
 def assign_status(row):
     """
@@ -85,30 +105,36 @@ def assign_status(row):
     else:
         return "Healthy"
 
+def collect_data(service_name, start_ms, end_ms):
+    print(f"[*] Fetching metrics from {timestamp_utc(start_ms)} to {timestamp_utc(end_ms)}...")
+    print(f"[*] Start Epoch: {start_ms / 1000.0} | End Epoch: {end_ms / 1000.0}\n")
 
-def main():
-    print(f"[*] Extracting Experiment 4: {START_TIME_STR} -> {END_TIME_STR}")
-    df = pd.DataFrame({name: fetch_series(name, q) for name, q in QUERIES.items()})
+    # Fetch each query and merge automatically on timestamp index
+    df = pd.DataFrame({name: fetch_series(name, q, start_ms, end_ms) for name, q in get_quries(service_name).items()})
 
     if df.empty:
-        print("[!] No data gathered.")
+        print("\n[!] No data could be collected. Exiting.")
         return
 
-    # Clean gaps and restore timestamp column
+    # Clean gaps
     df = df.ffill().bfill().fillna(0.0)
     df.reset_index(inplace=True)
+
     if "index" in df.columns:
         df.rename(columns={"index": "timestamp"}, inplace=True)
 
-    df["Local Datetime"] = df["timestamp"].apply(
+    # Add human-readable timestamps
+    df["local_datetime"] = df["timestamp"].apply(
         lambda ts: datetime.fromtimestamp(ts).strftime("%Y-%m-%d %H:%M:%S")
     )
 
-    # Dynamic status classification
     df["status"] = df.apply(assign_status, axis=1)
 
-    df.to_csv(OUTPUT_FILE, index=False)
-    print(f"\n[✓] Successfully saved {len(df)} rows to '{OUTPUT_FILE}'")
+    # Save
+    output_path = get_output_filepath(service_name, start_ms)
+    df.to_csv(output_path, index=False)
+    print(f"\n[✓] Successfully saved {len(df)} rows to '{output_path.name}'")
+    print(df.head())
 
     # Print label distribution to verify all 3 states were captured
     print("\n--- Status Distribution ---")
@@ -116,6 +142,9 @@ def main():
     print("\n--- Summary Statistics by Status ---")
     print(df.groupby("status")[["target_latency", "target_active_requests", "target_cpu"]].mean())
 
-
 if __name__ == "__main__":
-    main()
+    start_ms = 1793011513771
+    end_ms = 1793012114080
+    collect_data("inventory_service", start_ms, end_ms)
+    collect_data("payment_service", start_ms, end_ms)
+    collect_data("order_service", start_ms, end_ms)

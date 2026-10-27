@@ -2,60 +2,72 @@ import os
 import requests
 import pandas as pd
 from datetime import datetime, timezone
+from pathlib import Path
 
 # ==============================================================================
 # 1. CONFIGURATION
 # ==============================================================================
 PROMETHEUS_URL = "http://localhost:9090/api/v1/query_range"
-TARGET_SERVICE = "payment_service" #  inventory_service or payment_service
-STEP = "2s"  # Set to "1s" or "2s"
 
-# Your exact experiment window (in your local Mac time)
-START_TIME_STR = "2026-09-17 16:24:41"
-END_TIME_STR = "2026-09-17 16:34:41"
+def get_quries(service_name):
+    return  {
+        # CPU
+        "target_cpu": f'otel_process_cpu_usage{{application="{service_name}"}} * 100',
 
-OUTPUT_FILE = "raw_data/exp2_poisson_healthy_payment.csv"  # exp2_poisson_healthy_inventory or exp2_poisson_healthy_payment
+        # Memory (used / committed avoids the 3-pool heap split issue)
+        "target_mem": f'sum(otel_jvm_memory_used_bytes{{area="heap", application="{service_name}"}}) / sum(otel_jvm_memory_max_bytes{{area="heap", application="{service_name}"}} > 0)',
 
-# ==============================================================================
-# 2. FIXED TIMESTAMP CONVERSION (Uses Local Mac Timezone)
-# ==============================================================================
-start_dt = datetime.strptime(START_TIME_STR, "%Y-%m-%d %H:%M:%S")
-end_dt = datetime.strptime(END_TIME_STR, "%Y-%m-%d %H:%M:%S")
+        # Throughput, Latency, and Error Rate (using 1m rate window)
+        "target_throughput": f'sum(rate(otel_http_server_requests_milliseconds_count{{application="{service_name}"}}[1m]))',
+        "target_latency": f'sum(rate(otel_http_server_requests_milliseconds_sum{{application="{service_name}"}}[1m])) / sum(rate(otel_http_server_requests_milliseconds_count{{application="{service_name}"}}[1m]))',
+        "target_error_rate": f'sum(rate(otel_http_server_requests_milliseconds_count{{application="{service_name}", status=~"5.."}}[1m])) / sum(rate(otel_http_server_requests_milliseconds_count{{application="{service_name}"}}[1m]))',
 
-START_TS = int(start_dt.timestamp())
-END_TS = int(end_dt.timestamp())
+        # Threads & Active requests
+        "target_live_threads": f'otel_jvm_threads_live{{application="{service_name}"}}',
+        "target_active_requests": f'sum(otel_http_server_requests_active_milliseconds_count{{application="{service_name}"}})'
+    }
 
-# ==============================================================================
-# 3. QUERIES (Matching your Prometheus metrics)
-# ==============================================================================
-QUERIES = {
-    # CPU
-    "target_cpu": f'otel_process_cpu_usage{{application="{TARGET_SERVICE}"}} * 100',
+def get_output_filepath(service_name, start_ms):
+    output_path = Path(f"outputs/Exp002_{service_name}_{ms_to_utc_compact(start_ms)}.csv")
+    # Create parent directories if they don't exist
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    return output_path
 
-    # Memory (used / committed avoids the 3-pool heap split issue)
-    "target_mem": f'sum(otel_jvm_memory_used_bytes{{area="heap", application="{TARGET_SERVICE}"}}) / sum(otel_jvm_memory_max_bytes{{area="heap", application="{TARGET_SERVICE}"}} > 0)',
+def timestamp_utc(ms: int) -> str:
+    # Convert milliseconds to seconds and create a datetime object in UTC
+    dt = datetime.fromtimestamp(ms / 1000.0, tz=timezone.utc)
+    # Format to 'YYYY-MM-DD HH:MM:SS'
+    return dt.strftime("%Y-%m-%d %H:%M:%S")
+    # Example usage:
+    # ts = 1793003135039
+    # print(format_timestamp_utc(ts))
+    # Output: 2026-10-26 08:25:35
 
+def ms_to_utc_compact(ms: int) -> str:
+    """Convert timestamp in milliseconds to UTC format:
 
-    # Throughput, Latency, and Error Rate (using 1m rate window)
-    "target_throughput": f'sum(rate(otel_http_server_requests_milliseconds_count{{application="{TARGET_SERVICE}"}}[1m]))',
-    "target_latency": f'sum(rate(otel_http_server_requests_milliseconds_sum{{application="{TARGET_SERVICE}"}}[1m])) / sum(rate(otel_http_server_requests_milliseconds_count{{application="{TARGET_SERVICE}"}}[1m]))',
-    "target_error_rate": f'sum(rate(otel_http_server_requests_milliseconds_count{{application="{TARGET_SERVICE}", status=~"5.."}}[1m])) / sum(rate(otel_http_server_requests_milliseconds_count{{application="{TARGET_SERVICE}"}}[1m]))',
+    YYYYMMDD_HHMMSS (e.g., 20261027_033546)
+    """
+    dt = datetime.fromtimestamp(ms / 1000.0, tz=timezone.utc)
+    return dt.strftime("%Y%m%d_%H%M%S")
+    # Example usage:
+    # # A timestamp around Oct 27, 2026 at 03:35:46 UTC
+    # ts_ms = 1793072146000
+    # formatted_date = ms_to_utc_compact(ts_ms)
 
-    # Threads & Active requests
-    "target_live_threads": f'otel_jvm_threads_live{{application="{TARGET_SERVICE}"}}',
-    "target_active_requests": f'sum(otel_http_server_requests_active_milliseconds_count{{application="{TARGET_SERVICE}"}})'
-}
+    # print(formatted_date)
+    # # Output: 20261027_033546
 
 
 # ==============================================================================
 # 4. EXTRACTION LOGIC
 # ==============================================================================
-def fetch_series(query_name, query_str):
+def fetch_series(query_name, query_str, start_ms, end_ms, step = '2s'):
     params = {
         "query": query_str,
-        "start": START_TS,
-        "end": END_TS,
-        "step": STEP
+        "start":  start_ms / 1000.0,
+        "end": end_ms / 1000.0,
+        "step": step
     }
     try:
         res = requests.get(PROMETHEUS_URL, params=params, timeout=15)
@@ -80,12 +92,12 @@ def fetch_series(query_name, query_str):
         return pd.Series(dtype=float)
 
 
-def main():
-    print(f"[*] Fetching metrics from {START_TIME_STR} to {END_TIME_STR}...")
-    print(f"[*] Start Epoch: {START_TS} | End Epoch: {END_TS}\n")
+def collect_data(service_name, start_ms, end_ms):
+    print(f"[*] Fetching metrics from {timestamp_utc(start_ms)} to {timestamp_utc(end_ms)}...")
+    print(f"[*] Start Epoch: {start_ms / 1000.0} | End Epoch: {end_ms / 1000.0}\n")
 
     # Fetch each query and merge automatically on timestamp index
-    df = pd.DataFrame({name: fetch_series(name, q) for name, q in QUERIES.items()})
+    df = pd.DataFrame({name: fetch_series(name, q, start_ms, end_ms) for name, q in get_quries(service_name).items()})
 
     if df.empty:
         print("\n[!] No data could be collected. Exiting.")
@@ -99,16 +111,21 @@ def main():
         df.rename(columns={"index": "timestamp"}, inplace=True)
 
     # Add human-readable timestamps
-    df["Local Datetime"] = df["timestamp"].apply(
+    df["local_datetime"] = df["timestamp"].apply(
         lambda ts: datetime.fromtimestamp(ts).strftime("%Y-%m-%d %H:%M:%S")
     )
     df["status"] = "Healthy"
 
     # Save
-    df.to_csv(OUTPUT_FILE, index=False)
-    print(f"\n[✓] Successfully saved {len(df)} rows to '{OUTPUT_FILE}'")
+    output_path = get_output_filepath(service_name, start_ms)
+    df.to_csv(output_path, index=False)
+    print(f"\n[✓] Successfully saved {len(df)} rows to '{output_path.name}'")
     print(df.head())
 
 
 if __name__ == "__main__":
-    main()
+    start_ms = 1793006907332
+    end_ms = 1793007507071
+    collect_data("inventory_service", start_ms, end_ms)
+    collect_data("payment_service", start_ms, end_ms)
+    collect_data("order_service", start_ms, end_ms)
