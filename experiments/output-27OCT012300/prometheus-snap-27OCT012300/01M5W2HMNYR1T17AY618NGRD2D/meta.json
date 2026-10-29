@@ -1,0 +1,18 @@
+{
+	"ulid": "01M5W2HMNYR1T17AY618NGRD2D",
+	"minTime": 1793008800426,
+	"maxTime": 1793017302427,
+	"stats": {
+		"numSamples": 24031551,
+		"numFloatSamples": 24031551,
+		"numSeries": 5973,
+		"numChunks": 203814
+	},
+	"compaction": {
+		"level": 1,
+		"sources": [
+			"01M5W2HMNYR1T17AY618NGRD2D"
+		]
+	},
+	"version": 1
+}

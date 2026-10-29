@@ -9,22 +9,32 @@ from pathlib import Path
 # ==============================================================================
 PROMETHEUS_URL = "http://localhost:9090/api/v1/query_range"
 
-def get_quries(service_name):
-    return  {
-        # CPU
-        "target_cpu": f'otel_process_cpu_usage{{application="{service_name}"}} * 100',
+# Telemetry resolution (step is 2 seconds)
+STEP_30S = 15          # 15 rows * 2s = 30 seconds
+STEP_60S = 30          # 30 rows * 2s = 60 seconds
+LOOK_AHEAD_STEPS = 20  # 20 rows * 2s = 40 seconds proactive lead-time runway
 
-        # Memory (used / committed avoids the 3-pool heap split issue)
+def get_quries(service_name):
+    # Using 10s rate window for 2s scrapes to capture fast transitions without lag
+    return {
+        # CPU (%)
+        "target_cpu": f'avg(otel_process_cpu_usage{{application="{service_name}"}}) * 100',
+
+        # Memory (Used / Max ratio)
         "target_mem": f'sum(otel_jvm_memory_used_bytes{{area="heap", application="{service_name}"}}) / sum(otel_jvm_memory_max_bytes{{area="heap", application="{service_name}"}} > 0)',
 
-        # Throughput, Latency, and Error Rate (using 1m rate window)
-        "target_throughput": f'sum(rate(otel_http_server_requests_milliseconds_count{{application="{service_name}"}}[1m]))',
-        "target_latency": f'sum(rate(otel_http_server_requests_milliseconds_sum{{application="{service_name}"}}[1m])) / sum(rate(otel_http_server_requests_milliseconds_count{{application="{service_name}"}}[1m]))',
-        "target_error_rate": f'sum(rate(otel_http_server_requests_milliseconds_count{{application="{service_name}", status=~"5.."}}[1m])) / sum(rate(otel_http_server_requests_milliseconds_count{{application="{service_name}"}}[1m]))',
+        # Throughput (RPS)
+        "target_throughput": f'sum(rate(otel_http_server_requests_milliseconds_count{{application="{service_name}"}}[10s])) or vector(0)',
+
+        # Latency (ms)
+        "target_latency": f'(sum(rate(otel_http_server_requests_milliseconds_sum{{application="{service_name}"}}[10s])) / sum(rate(otel_http_server_requests_milliseconds_count{{application="{service_name}"}}[10s]))) or vector(0)',
+
+        # Total 5xx Error Rate (0.0 to 1.0)
+        "target_error_rate": f'(sum(rate(otel_http_server_requests_milliseconds_count{{application="{service_name}", status=~"5.."}}[10s])) or vector(0)) / (sum(rate(otel_http_server_requests_milliseconds_count{{application="{service_name}"}}[10s])) > 0) or vector(0)',
 
         # Threads & Active requests
-        "target_live_threads": f'otel_jvm_threads_live{{application="{service_name}"}}',
-        "target_active_requests": f'sum(otel_http_server_requests_active_milliseconds_count{{application="{service_name}"}})'
+        "target_live_threads": f'sum(otel_jvm_threads_live{{application="{service_name}"}})',
+        "target_active_requests": f'sum(otel_http_server_requests_active_milliseconds_count{{application="{service_name}"}}) or vector(0)'
     }
 
 def get_output_filepath(service_name, start_ms):
@@ -91,6 +101,7 @@ def fetch_series(query_name, query_str, start_ms, end_ms, step = '2s'):
         print(f"  [ERROR] {query_name}: {e}")
         return pd.Series(dtype=float)
 
+
 def collect_data(service_name, start_ms, end_ms):
     print(f"[*] Fetching metrics from {timestamp_utc(start_ms)} to {timestamp_utc(end_ms)}...")
     print(f"[*] Start Epoch: {start_ms / 1000.0} | End Epoch: {end_ms / 1000.0}\n")
@@ -122,8 +133,8 @@ def collect_data(service_name, start_ms, end_ms):
     print(df.head())
 
 if __name__ == "__main__":
-    start_ms = 1793003135039
-    end_ms = 1793003735233
+    start_ms = 1793140430244
+    end_ms = 1793141030382
     collect_data("inventory_service", start_ms, end_ms)
     collect_data("payment_service", start_ms, end_ms)
     collect_data("order_service", start_ms, end_ms)

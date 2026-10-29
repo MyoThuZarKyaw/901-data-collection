@@ -1,0 +1,18 @@
+{
+	"ulid": "01M5VRK048GABTEB39A3G3TH6P",
+	"minTime": 1792995574443,
+	"maxTime": 1793001600000,
+	"stats": {
+		"numSamples": 376603,
+		"numFloatSamples": 376603,
+		"numSeries": 3615,
+		"numChunks": 3687
+	},
+	"compaction": {
+		"level": 1,
+		"sources": [
+			"01M5VRK048GABTEB39A3G3TH6P"
+		]
+	},
+	"version": 1
+}

@@ -96,7 +96,11 @@ def compute_raw_state(df: pd.DataFrame) -> np.ndarray:
         # State 2: Failed (Unchanged: CB trip territory)
         (df["target_latency"] >= 1000.0)
         | (df["target_error_rate"] >= 0.30)
-        | (df["target_live_threads"] == 0),
+        | (df["target_live_threads"] == 0) # <-- Catches dead container
+        | (
+            (df["target_throughput"] == 0.0)
+            & (df["target_active_requests"] == 0)
+        ),  # <-- Total silence / outage
         # State 1: Degraded (Lowered to 200ms to catch 50% assault levels)
         (df["target_latency"] >= 200.0)
         | (df["target_error_rate"] >= 0.03)
@@ -171,6 +175,17 @@ def collect_and_process(service_name: str, start_ms: int, end_ms: int, exp_id: s
         print(f"[!] Insufficient data points fetched for {service_name}. Aborting.")
         return
 
+    # If the container was dead, live threads and CPU are 0 (not forward-filled!)
+    df["target_live_threads"] = df["target_live_threads"].fillna(0.0)
+    df["target_throughput"] = df["target_throughput"].fillna(0.0)
+    df["target_cpu"] = df["target_cpu"].fillna(0.0)
+    df["target_active_requests"] = df["target_active_requests"].fillna(0.0)
+
+    # If threads are 0 (dead container), error rate is 100% and latency is 0
+    dead_mask = df["target_live_threads"] == 0.0
+    df.loc[dead_mask, "target_error_rate"] = 1.0
+    df.loc[dead_mask, "target_latency"] = 0.0
+
     # Clean missing points & restore timestamp column
     df = df.ffill().bfill().fillna(0.0)
     df = df.reset_index()
@@ -202,13 +217,13 @@ def collect_and_process(service_name: str, start_ms: int, end_ms: int, exp_id: s
 # ==============================================================================
 if __name__ == "__main__":
     # Example timestamps (epoch ms)
-    start_ms = 1793166827182
-    end_ms = 1793167427527
+    start_ms = 1793260418918
+    end_ms = 1793260779580
 
     start_ms = start_ms - 60000
 
     # You can specify the experiment ID here:
-    experiment_id = "Exp005"
+    experiment_id = "ExpTest01"
 
     collect_and_process("inventory_service", start_ms, end_ms, experiment_id)
     collect_and_process("payment_service", start_ms, end_ms, experiment_id)

@@ -10,21 +10,26 @@ from pathlib import Path
 PROMETHEUS_URL = "http://localhost:9090/api/v1/query_range"
 
 def get_quries(service_name):
-    return  {
-        # CPU
-        "target_cpu": f'otel_process_cpu_usage{{application="{service_name}"}} * 100',
+    # Using 10s rate window for 2s scrapes to capture fast transitions without lag
+    return {
+        # CPU (%)
+        "target_cpu": f'avg(otel_process_cpu_usage{{application="{service_name}"}}) * 100',
 
-        # Memory (used / committed avoids the 3-pool heap split issue)
+        # Memory (Used / Max ratio)
         "target_mem": f'sum(otel_jvm_memory_used_bytes{{area="heap", application="{service_name}"}}) / sum(otel_jvm_memory_max_bytes{{area="heap", application="{service_name}"}} > 0)',
 
-        # Throughput, Latency, and Error Rate (using 1m rate window)
-        "target_throughput": f'sum(rate(otel_http_server_requests_milliseconds_count{{application="{service_name}"}}[1m]))',
-        "target_latency": f'sum(rate(otel_http_server_requests_milliseconds_sum{{application="{service_name}"}}[1m])) / sum(rate(otel_http_server_requests_milliseconds_count{{application="{service_name}"}}[1m]))',
-        "target_error_rate": f'sum(rate(otel_http_server_requests_milliseconds_count{{application="{service_name}", status=~"5.."}}[1m])) / sum(rate(otel_http_server_requests_milliseconds_count{{application="{service_name}"}}[1m]))',
+        # Throughput (RPS)
+        "target_throughput": f'sum(rate(otel_http_server_requests_milliseconds_count{{application="{service_name}"}}[10s])) or vector(0)',
+
+        # Latency (ms)
+        "target_latency": f'(sum(rate(otel_http_server_requests_milliseconds_sum{{application="{service_name}"}}[10s])) / sum(rate(otel_http_server_requests_milliseconds_count{{application="{service_name}"}}[10s]))) or vector(0)',
+
+        # Total 5xx Error Rate (0.0 to 1.0)
+        "target_error_rate": f'(sum(rate(otel_http_server_requests_milliseconds_count{{application="{service_name}", status=~"5.."}}[10s])) or vector(0)) / (sum(rate(otel_http_server_requests_milliseconds_count{{application="{service_name}"}}[10s])) > 0) or vector(0)',
 
         # Threads & Active requests
-        "target_live_threads": f'otel_jvm_threads_live{{application="{service_name}"}}',
-        "target_active_requests": f'sum(otel_http_server_requests_active_milliseconds_count{{application="{service_name}"}})'
+        "target_live_threads": f'sum(otel_jvm_threads_live{{application="{service_name}"}})',
+        "target_active_requests": f'sum(otel_http_server_requests_active_milliseconds_count{{application="{service_name}"}}) or vector(0)'
     }
 
 def get_output_filepath(service_name, start_ms):
@@ -124,8 +129,8 @@ def collect_data(service_name, start_ms, end_ms):
     print(df.head())
 
 if __name__ == "__main__":
-    start_ms = 1793008617175
-    end_ms = 1793009216761
+    start_ms = 1793145267954
+    end_ms = 1793145867554
     collect_data("inventory_service", start_ms, end_ms)
     collect_data("payment_service", start_ms, end_ms)
     collect_data("order_service", start_ms, end_ms)

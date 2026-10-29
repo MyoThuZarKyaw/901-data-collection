@@ -1,0 +1,18 @@
+{
+	"ulid": "01M5VYY624M6DT36D4CCX281YP",
+	"minTime": 1793002719886,
+	"maxTime": 1793008800000,
+	"stats": {
+		"numSamples": 11642802,
+		"numFloatSamples": 11642802,
+		"numSeries": 5305,
+		"numChunks": 93263
+	},
+	"compaction": {
+		"level": 1,
+		"sources": [
+			"01M5VYY624M6DT36D4CCX281YP"
+		]
+	},
+	"version": 1
+}
