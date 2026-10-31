@@ -1,0 +1,40 @@
+2026-11-01 12:44:12,576 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2026-11-01 12:44:12,592 INFO o.a.j.JMeter: Loading user properties from: /Users/myothuzarkyaw/Documents/AIS/901-Thesis/Apps/apache-jmeter-5.6.3/bin/user.properties
+2026-11-01 12:44:12,592 INFO o.a.j.JMeter: Loading system properties from: /Users/myothuzarkyaw/Documents/AIS/901-Thesis/Apps/apache-jmeter-5.6.3/bin/system.properties
+2026-11-01 12:44:12,605 INFO o.a.j.JMeter: Copyright (c) 1998-2024 The Apache Software Foundation
+2026-11-01 12:44:12,605 INFO o.a.j.JMeter: Version 5.6.3
+2026-11-01 12:44:12,605 INFO o.a.j.JMeter: java.version=25.0.3
+2026-11-01 12:44:12,605 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
+2026-11-01 12:44:12,606 INFO o.a.j.JMeter: os.name=Mac OS X
+2026-11-01 12:44:12,606 INFO o.a.j.JMeter: os.arch=aarch64
+2026-11-01 12:44:12,606 INFO o.a.j.JMeter: os.version=15.5
+2026-11-01 12:44:12,606 INFO o.a.j.JMeter: file.encoding=UTF-8
+2026-11-01 12:44:12,606 INFO o.a.j.JMeter: java.awt.headless=null
+2026-11-01 12:44:12,606 INFO o.a.j.JMeter: Max memory     =1073741824
+2026-11-01 12:44:12,606 INFO o.a.j.JMeter: Available Processors =8
+2026-11-01 12:44:12,618 INFO o.a.j.JMeter: Default Locale=English (EN)
+2026-11-01 12:44:12,618 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2026-11-01 12:44:12,618 INFO o.a.j.JMeter: JMeterHome=/Users/myothuzarkyaw/Documents/AIS/901-Thesis/Apps/apache-jmeter-5.6.3
+2026-11-01 12:44:12,618 INFO o.a.j.JMeter: user.dir  =/Users/myothuzarkyaw/Documents/AIS/901-Thesis/Projects/901-data-collection/evaluations
+2026-11-01 12:44:12,618 INFO o.a.j.JMeter: PWD       =/Users/myothuzarkyaw/Documents/AIS/901-Thesis/Projects/901-data-collection/evaluations
+2026-11-01 12:44:12,620 INFO o.a.j.JMeter: IP: 127.0.0.1 Name: Myos-MacBook-Pro.local FullName: localhost
+2026-11-01 12:44:12,629 INFO o.a.j.JMeter: Loaded icon properties from org/apache/jmeter/images/icon.properties
+2026-11-01 12:44:13,296 INFO o.a.j.JMeterGuiLauncher: Setting LAF to: com.github.weisj.darklaf.DarkLaf:com.github.weisj.darklaf.theme.DarculaTheme
+2026-11-01 12:44:18,186 INFO o.a.j.JMeterGuiLauncher: Loading file: /Users/myothuzarkyaw/Documents/AIS/901-Thesis/Projects/901-data-collection/evaluations/FinalExp001.jmx
+2026-11-01 12:44:18,190 INFO o.a.j.s.FileServer: Default base='/Users/myothuzarkyaw/Documents/AIS/901-Thesis/Projects/901-data-collection/evaluations'
+2026-11-01 12:44:18,191 INFO o.a.j.s.FileServer: Set new base='/Users/myothuzarkyaw/Documents/AIS/901-Thesis/Projects/901-data-collection/evaluations'
+2026-11-01 12:44:18,550 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2026-11-01 12:44:18,575 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2026-11-01 12:44:18,577 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2026-11-01 12:44:18,579 INFO o.a.j.s.SaveService: Loading file: /Users/myothuzarkyaw/Documents/AIS/901-Thesis/Projects/901-data-collection/evaluations/FinalExp001.jmx
+2026-11-01 12:44:18,611 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-11-01 12:44:18,612 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-11-01 12:44:18,612 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-11-01 12:44:18,612 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-11-01 12:44:18,612 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2026-11-01 12:44:18,612 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2026-11-01 12:44:18,672 INFO o.a.j.s.FileServer: Set new base='/Users/myothuzarkyaw/Documents/AIS/901-Thesis/Projects/901-data-collection/evaluations'
+2026-11-01 12:44:19,092 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2026-11-01 12:44:19,093 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to UTF-8
+2026-11-01 12:44:19,093 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2026-11-01 12:44:19,093 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
