@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jmeterTestPlan version="1.2" properties="5.0" jmeter="5.6.3">
   <hashTree>
-    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Exp005 - Thread Pool Saturation (High Concurrency + Latency)">
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="FinalExp002 - ">
       <stringProp name="TestPlan.comments">5 users with 15s roound up</stringProp>
       <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
         <collectionProp name="Arguments.arguments">
@@ -20,9 +20,14 @@
             <stringProp name="Argument.value">8080</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
-          <elementProp name="VIEW_RESULTS_TREE_CSV" elementType="Argument">
-            <stringProp name="Argument.name">VIEW_RESULTS_TREE_CSV</stringProp>
-            <stringProp name="Argument.value">output/Exp005.csv</stringProp>
+          <elementProp name="VIEW_RESULTS_TREE_PROACTIVE_CSV" elementType="Argument">
+            <stringProp name="Argument.name">VIEW_RESULTS_TREE_PROACTIVE_CSV</stringProp>
+            <stringProp name="Argument.value">final-output/Proactive-FinalExp002-${__time(yyyyMMdd-HHmmss)}.csv</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="VIEW_RESULTS_TREE_REACTIVE_CSV" elementType="Argument">
+            <stringProp name="Argument.name">VIEW_RESULTS_TREE_REACTIVE_CSV</stringProp>
+            <stringProp name="Argument.value">final-output/Reactive-FinalExp002-${__time(yyyyMMdd-HHmmss)}.csv</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
         </collectionProp>
@@ -271,7 +276,7 @@ if (token != null &amp;&amp; !token.equals(&quot;TOKEN_NOT_FOUND&quot;)) {
           <stringProp name="RandomTimer.range">500</stringProp>
         </PoissonRandomTimer>
         <hashTree/>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[@Main] Create new order">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[@Main] Create new order" enabled="true">
           <stringProp name="HTTPSampler.domain">${GATEWAY_HOST}</stringProp>
           <stringProp name="HTTPSampler.port">${GATEWAY_PORT}</stringProp>
           <stringProp name="HTTPSampler.protocol">${GATEWAY_PROTOCOL}</stringProp>
@@ -329,7 +334,7 @@ if (token != null &amp;&amp; !token.equals(&quot;TOKEN_NOT_FOUND&quot;)) {
         </HTTPSamplerProxy>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Chaos 2 - Inject Inventory HIGH Latency Assault" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Chaos 2 - Inject Inventory HIGH Latency Assault">
         <intProp name="ThreadGroup.num_threads">1</intProp>
         <intProp name="ThreadGroup.ramp_time">1</intProp>
         <longProp name="ThreadGroup.duration">360</longProp>
@@ -451,7 +456,7 @@ if (token != null &amp;&amp; !token.equals(&quot;TOKEN_NOT_FOUND&quot;)) {
         </HTTPSamplerProxy>
         <hashTree/>
       </hashTree>
-      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree">
+      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree - Reactive - CSV" enabled="false">
         <boolProp name="ResultCollector.error_logging">false</boolProp>
         <objProp>
           <name>saveConfig</name>
@@ -485,7 +490,44 @@ if (token != null &amp;&amp; !token.equals(&quot;TOKEN_NOT_FOUND&quot;)) {
             <connectTime>true</connectTime>
           </value>
         </objProp>
-        <stringProp name="filename">${VIEW_RESULTS_TREE_CSV}</stringProp>
+        <stringProp name="filename">${VIEW_RESULTS_TREE_REACTIVE_CSV}</stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree - Proactive - CSV">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <url>true</url>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename">${VIEW_RESULTS_TREE_PROACTIVE_CSV}</stringProp>
       </ResultCollector>
       <hashTree/>
     </hashTree>
