@@ -21,12 +21,12 @@
           </elementProp>
           <elementProp name="VIEW_RESULTS_TREE_PROACTIVE_CSV" elementType="Argument">
             <stringProp name="Argument.name">VIEW_RESULTS_TREE_PROACTIVE_CSV</stringProp>
-            <stringProp name="Argument.value">final-output/Proactive-FinalExp001-${__time(yyyyMMdd-HHmmss)}.csv</stringProp>
+            <stringProp name="Argument.value">finalexp001-output/Proactive-FinalExp001-${__time(yyyyMMdd-HHmmss)}.csv</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="VIEW_RESULTS_TREE_REACTIVE_CSV" elementType="Argument">
             <stringProp name="Argument.name">VIEW_RESULTS_TREE_REACTIVE_CSV</stringProp>
-            <stringProp name="Argument.value">final-output/Reactive-FinalExp001-${__time(yyyyMMdd-HHmmss)}.csv</stringProp>
+            <stringProp name="Argument.value">finalexp001-output/Reactive-FinalExp001-${__time(yyyyMMdd-HHmmss)}.csv</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
         </collectionProp>
@@ -44,7 +44,7 @@
         </elementProp>
       </SetupThreadGroup>
       <hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[?Auth] Login user" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[?Auth] Login user">
           <stringProp name="HTTPSampler.domain">${GATEWAY_HOST}</stringProp>
           <stringProp name="HTTPSampler.port">${GATEWAY_PORT}</stringProp>
           <stringProp name="HTTPSampler.protocol">${GATEWAY_PROTOCOL}</stringProp>
@@ -68,7 +68,7 @@
           </elementProp>
         </HTTPSamplerProxy>
         <hashTree>
-          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
             <collectionProp name="HeaderManager.headers">
               <elementProp name="" elementType="Header">
                 <stringProp name="Header.name">Content-Type</stringProp>
@@ -77,21 +77,21 @@
             </collectionProp>
           </HeaderManager>
           <hashTree/>
-          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor" enabled="true">
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor">
             <stringProp name="JSONPostProcessor.referenceNames">JWT_TOKEN</stringProp>
             <stringProp name="JSONPostProcessor.jsonPathExprs">$.id_token</stringProp>
             <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
           </JSONPostProcessor>
           <hashTree/>
         </hashTree>
-        <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor" enabled="true">
+        <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor">
           <stringProp name="JSONPostProcessor.referenceNames">JWT_TOKEN</stringProp>
           <stringProp name="JSONPostProcessor.jsonPathExprs">$.id_token</stringProp>
           <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
           <stringProp name="JSONPostProcessor.defaultValues">TOKEN_NOT_FOUND</stringProp>
         </JSONPostProcessor>
         <hashTree/>
-        <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="JSR223 PostProcessor" enabled="true">
+        <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="JSR223 PostProcessor">
           <stringProp name="cacheKey">true</stringProp>
           <stringProp name="filename"></stringProp>
           <stringProp name="parameters"></stringProp>

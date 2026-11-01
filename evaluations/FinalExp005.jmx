@@ -22,12 +22,12 @@
           </elementProp>
           <elementProp name="VIEW_RESULTS_TREE_PROACTIVE_CSV" elementType="Argument">
             <stringProp name="Argument.name">VIEW_RESULTS_TREE_PROACTIVE_CSV</stringProp>
-            <stringProp name="Argument.value">final-output/Proactive-FinalExp005-${__time(yyyyMMdd-HHmmss)}.csv</stringProp>
+            <stringProp name="Argument.value">finalexp005-output/Proactive-FinalExp005-${__time(yyyyMMdd-HHmmss)}.csv</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="VIEW_RESULTS_TREE_REACTIVE_CSV" elementType="Argument">
             <stringProp name="Argument.name">VIEW_RESULTS_TREE_REACTIVE_CSV</stringProp>
-            <stringProp name="Argument.value">final-output/Reactive-FinalExp005-${__time(yyyyMMdd-HHmmss)}.csv</stringProp>
+            <stringProp name="Argument.value">finalexp005-output/Reactive-FinalExp005-${__time(yyyyMMdd-HHmmss)}.csv</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
         </collectionProp>
@@ -277,7 +277,7 @@ if (token != null &amp;&amp; !token.equals(&quot;TOKEN_NOT_FOUND&quot;)) {
           <stringProp name="RandomTimer.range">150</stringProp>
         </GaussianRandomTimer>
         <hashTree/>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[@Main] Create new order">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[@Main] Create new order" enabled="true">
           <stringProp name="HTTPSampler.domain">${GATEWAY_HOST}</stringProp>
           <stringProp name="HTTPSampler.port">${GATEWAY_PORT}</stringProp>
           <stringProp name="HTTPSampler.protocol">${GATEWAY_PROTOCOL}</stringProp>
@@ -494,7 +494,7 @@ if (token != null &amp;&amp; !token.equals(&quot;TOKEN_NOT_FOUND&quot;)) {
         <stringProp name="filename">${VIEW_RESULTS_TREE_REACTIVE_CSV}</stringProp>
       </ResultCollector>
       <hashTree/>
-      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree - Proactive - CSV">
+      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree - Proactive - CSV" enabled="true">
         <boolProp name="ResultCollector.error_logging">false</boolProp>
         <objProp>
           <name>saveConfig</name>

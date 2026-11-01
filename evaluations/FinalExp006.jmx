@@ -27,12 +27,12 @@
           </elementProp>
           <elementProp name="VIEW_RESULTS_TREE_PROACTIVE_CSV" elementType="Argument">
             <stringProp name="Argument.name">VIEW_RESULTS_TREE_PROACTIVE_CSV</stringProp>
-            <stringProp name="Argument.value">final-output/Proactive-FinalExp006-${__time(yyyyMMdd-HHmmss)}.csv</stringProp>
+            <stringProp name="Argument.value">finalexp006-output/Proactive-FinalExp006-${__time(yyyyMMdd-HHmmss)}.csv</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="VIEW_RESULTS_TREE_REACTIVE_CSV" elementType="Argument">
             <stringProp name="Argument.name">VIEW_RESULTS_TREE_REACTIVE_CSV</stringProp>
-            <stringProp name="Argument.value">final-output/Reactive-FinalExp006-${__time(yyyyMMdd-HHmmss)}.csv</stringProp>
+            <stringProp name="Argument.value">finalexp006-output/Reactive-FinalExp006-${__time(yyyyMMdd-HHmmss)}.csv</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
         </collectionProp>
@@ -282,7 +282,7 @@ if (token != null &amp;&amp; !token.equals(&quot;TOKEN_NOT_FOUND&quot;)) {
           <stringProp name="RandomTimer.range">150</stringProp>
         </GaussianRandomTimer>
         <hashTree/>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[@Main] Create new order">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[@Main] Create new order" enabled="true">
           <stringProp name="HTTPSampler.domain">${GATEWAY_HOST}</stringProp>
           <stringProp name="HTTPSampler.port">${GATEWAY_PORT}</stringProp>
           <stringProp name="HTTPSampler.protocol">${GATEWAY_PROTOCOL}</stringProp>

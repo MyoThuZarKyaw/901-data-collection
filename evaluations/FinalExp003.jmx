@@ -22,12 +22,12 @@
           </elementProp>
           <elementProp name="VIEW_RESULTS_TREE_PROACTIVE_CSV" elementType="Argument">
             <stringProp name="Argument.name">VIEW_RESULTS_TREE_PROACTIVE_CSV</stringProp>
-            <stringProp name="Argument.value">final-output/Proactive-FinalExp003-${__time(yyyyMMdd-HHmmss)}.csv</stringProp>
+            <stringProp name="Argument.value">finalexp003-output/Proactive-FinalExp003-${__time(yyyyMMdd-HHmmss)}.csv</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="VIEW_RESULTS_TREE_REACTIVE_CSV" elementType="Argument">
             <stringProp name="Argument.name">VIEW_RESULTS_TREE_REACTIVE_CSV</stringProp>
-            <stringProp name="Argument.value">final-output/Reactive-FinalExp003-${__time(yyyyMMdd-HHmmss)}.csv</stringProp>
+            <stringProp name="Argument.value">finalexp003-output/Reactive-FinalExp003-${__time(yyyyMMdd-HHmmss)}.csv</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
         </collectionProp>
