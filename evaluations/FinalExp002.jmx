@@ -240,7 +240,7 @@ if (token != null &amp;&amp; !token.equals(&quot;TOKEN_NOT_FOUND&quot;)) {
         </HTTPSamplerProxy>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Main">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Main" enabled="true">
         <intProp name="ThreadGroup.num_threads">25</intProp>
         <intProp name="ThreadGroup.ramp_time">40</intProp>
         <longProp name="ThreadGroup.duration">600</longProp>
@@ -266,12 +266,12 @@ if (token != null &amp;&amp; !token.equals(&quot;TOKEN_NOT_FOUND&quot;)) {
           </collectionProp>
         </HeaderManager>
         <hashTree/>
-        <PoissonRandomTimer guiclass="PoissonRandomTimerGui" testclass="PoissonRandomTimer" testname="Poisson Random Timer">
+        <PoissonRandomTimer guiclass="PoissonRandomTimerGui" testclass="PoissonRandomTimer" testname="Poisson Random Timer" enabled="true">
           <stringProp name="ConstantTimer.delay">100</stringProp>
           <stringProp name="RandomTimer.range">500</stringProp>
         </PoissonRandomTimer>
         <hashTree/>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[@Main] Create new order" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[@Main] Create new order">
           <stringProp name="HTTPSampler.domain">${GATEWAY_HOST}</stringProp>
           <stringProp name="HTTPSampler.port">${GATEWAY_PORT}</stringProp>
           <stringProp name="HTTPSampler.protocol">${GATEWAY_PROTOCOL}</stringProp>
@@ -291,18 +291,6 @@ if (token != null &amp;&amp; !token.equals(&quot;TOKEN_NOT_FOUND&quot;)) {
       &quot;productId&quot;: &quot;PROD-001&quot;,&#xd;
       &quot;quantity&quot;: 1.00,&#xd;
       &quot;total&quot;: 1299.99&#xd;
-    },&#xd;
-    {&#xd;
-      &quot;price&quot;: 25.50,&#xd;
-      &quot;productId&quot;: &quot;PROD-002&quot;,&#xd;
-      &quot;quantity&quot;: 2.00,&#xd;
-      &quot;total&quot;: 51.00&#xd;
-    },&#xd;
-    {&#xd;
-      &quot;price&quot;: 79.99,&#xd;
-      &quot;productId&quot;: &quot;PROD-003&quot;,&#xd;
-      &quot;quantity&quot;: 2.00,&#xd;
-      &quot;total&quot;: 159.98&#xd;
     }&#xd;
   ]&#xd;
 }</stringProp>
@@ -341,7 +329,7 @@ if (token != null &amp;&amp; !token.equals(&quot;TOKEN_NOT_FOUND&quot;)) {
         </HTTPSamplerProxy>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Chaos 2 - Inject Inventory HIGH Latency Assault">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Chaos 2 - Inject Inventory HIGH Latency Assault" enabled="true">
         <intProp name="ThreadGroup.num_threads">1</intProp>
         <intProp name="ThreadGroup.ramp_time">1</intProp>
         <longProp name="ThreadGroup.duration">360</longProp>
@@ -355,7 +343,7 @@ if (token != null &amp;&amp; !token.equals(&quot;TOKEN_NOT_FOUND&quot;)) {
         </elementProp>
       </ThreadGroup>
       <hashTree>
-        <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
+        <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
           <collectionProp name="HeaderManager.headers">
             <elementProp name="" elementType="Header">
               <stringProp name="Header.name">Authorization</stringProp>
@@ -368,7 +356,7 @@ if (token != null &amp;&amp; !token.equals(&quot;TOKEN_NOT_FOUND&quot;)) {
           </collectionProp>
         </HeaderManager>
         <hashTree/>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[&amp;Chaos] Inject HIGH Latency Assault for Inventory Service">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[&amp;Chaos] Inject HIGH Latency Assault for Inventory Service" enabled="true">
           <stringProp name="HTTPSampler.domain">${GATEWAY_HOST}</stringProp>
           <stringProp name="HTTPSampler.port">${GATEWAY_PORT}</stringProp>
           <stringProp name="HTTPSampler.protocol">${GATEWAY_PROTOCOL}</stringProp>
@@ -402,7 +390,7 @@ if (token != null &amp;&amp; !token.equals(&quot;TOKEN_NOT_FOUND&quot;)) {
         </HTTPSamplerProxy>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Chaos 3 - Off Inventory Choas Latency Assaults">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Chaos 3 - Off Inventory Choas Latency Assaults" enabled="true">
         <intProp name="ThreadGroup.num_threads">1</intProp>
         <intProp name="ThreadGroup.ramp_time">1</intProp>
         <longProp name="ThreadGroup.duration">360</longProp>
@@ -416,7 +404,7 @@ if (token != null &amp;&amp; !token.equals(&quot;TOKEN_NOT_FOUND&quot;)) {
         </elementProp>
       </ThreadGroup>
       <hashTree>
-        <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
+        <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
           <collectionProp name="HeaderManager.headers">
             <elementProp name="" elementType="Header">
               <stringProp name="Header.name">Authorization</stringProp>
@@ -429,7 +417,7 @@ if (token != null &amp;&amp; !token.equals(&quot;TOKEN_NOT_FOUND&quot;)) {
           </collectionProp>
         </HeaderManager>
         <hashTree/>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[&amp;Chaos] Off Latency Assault for Inventory Service">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[&amp;Chaos] Off Latency Assault for Inventory Service" enabled="true">
           <stringProp name="HTTPSampler.domain">${GATEWAY_HOST}</stringProp>
           <stringProp name="HTTPSampler.port">${GATEWAY_PORT}</stringProp>
           <stringProp name="HTTPSampler.protocol">${GATEWAY_PROTOCOL}</stringProp>

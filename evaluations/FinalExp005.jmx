@@ -27,8 +27,6 @@
           </elementProp>
         </collectionProp>
       </elementProp>
-      <boolProp name="TestPlan.functional_mode">false</boolProp>
-      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
     </TestPlan>
     <hashTree>
       <SetupThreadGroup guiclass="SetupThreadGroupGui" testclass="SetupThreadGroup" testname="setUp Thread Group">
@@ -209,7 +207,7 @@ if (token != null &amp;&amp; !token.equals(&quot;TOKEN_NOT_FOUND&quot;)) {
           </collectionProp>
         </HeaderManager>
         <hashTree/>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[&amp;Chaos] Enable restController Chaos for Inventory Service">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[&amp;Chaos] Enable restController Chaos for Inventory Service" enabled="true">
           <stringProp name="HTTPSampler.domain">${GATEWAY_HOST}</stringProp>
           <stringProp name="HTTPSampler.port">${GATEWAY_PORT}</stringProp>
           <stringProp name="HTTPSampler.protocol">${GATEWAY_PROTOCOL}</stringProp>
@@ -242,7 +240,7 @@ if (token != null &amp;&amp; !token.equals(&quot;TOKEN_NOT_FOUND&quot;)) {
         </HTTPSamplerProxy>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Main">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Main" enabled="true">
         <stringProp name="TestPlan.comments">2 users, 60 seconds ramp, 10 mins, Guassian Timer (1000ms offsets, 200ms deviation)</stringProp>
         <intProp name="ThreadGroup.num_threads">4</intProp>
         <intProp name="ThreadGroup.ramp_time">15</intProp>
@@ -269,7 +267,7 @@ if (token != null &amp;&amp; !token.equals(&quot;TOKEN_NOT_FOUND&quot;)) {
           </collectionProp>
         </HeaderManager>
         <hashTree/>
-        <GaussianRandomTimer guiclass="GaussianRandomTimerGui" testclass="GaussianRandomTimer" testname="Gaussian Random Timer">
+        <GaussianRandomTimer guiclass="GaussianRandomTimerGui" testclass="GaussianRandomTimer" testname="Gaussian Random Timer" enabled="true">
           <stringProp name="ConstantTimer.delay">600</stringProp>
           <stringProp name="RandomTimer.range">150</stringProp>
         </GaussianRandomTimer>
@@ -294,18 +292,6 @@ if (token != null &amp;&amp; !token.equals(&quot;TOKEN_NOT_FOUND&quot;)) {
       &quot;productId&quot;: &quot;PROD-001&quot;,&#xd;
       &quot;quantity&quot;: 1.00,&#xd;
       &quot;total&quot;: 1299.99&#xd;
-    },&#xd;
-    {&#xd;
-      &quot;price&quot;: 25.50,&#xd;
-      &quot;productId&quot;: &quot;PROD-002&quot;,&#xd;
-      &quot;quantity&quot;: 2.00,&#xd;
-      &quot;total&quot;: 51.00&#xd;
-    },&#xd;
-    {&#xd;
-      &quot;price&quot;: 79.99,&#xd;
-      &quot;productId&quot;: &quot;PROD-003&quot;,&#xd;
-      &quot;quantity&quot;: 2.00,&#xd;
-      &quot;total&quot;: 159.98&#xd;
     }&#xd;
   ]&#xd;
 }</stringProp>
@@ -344,7 +330,7 @@ if (token != null &amp;&amp; !token.equals(&quot;TOKEN_NOT_FOUND&quot;)) {
         </HTTPSamplerProxy>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Chaos 2 - Inject Inventory Exception Assault">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Chaos 2 - Inject Inventory Exception Assault" enabled="true">
         <intProp name="ThreadGroup.num_threads">1</intProp>
         <intProp name="ThreadGroup.ramp_time">1</intProp>
         <longProp name="ThreadGroup.duration">360</longProp>
@@ -371,7 +357,7 @@ if (token != null &amp;&amp; !token.equals(&quot;TOKEN_NOT_FOUND&quot;)) {
           </collectionProp>
         </HeaderManager>
         <hashTree/>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[&amp;Chaos] Inject Exception Assault for Inventory Service">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[&amp;Chaos] Inject Exception Assault for Inventory Service" enabled="true">
           <stringProp name="HTTPSampler.domain">${GATEWAY_HOST}</stringProp>
           <stringProp name="HTTPSampler.port">${GATEWAY_PORT}</stringProp>
           <stringProp name="HTTPSampler.protocol">${GATEWAY_PROTOCOL}</stringProp>
@@ -405,7 +391,7 @@ if (token != null &amp;&amp; !token.equals(&quot;TOKEN_NOT_FOUND&quot;)) {
         </HTTPSamplerProxy>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Chaos 3 - Off Inventory Choas Exception Assaults">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Chaos 3 - Off Inventory Choas Exception Assaults" enabled="true">
         <intProp name="ThreadGroup.num_threads">1</intProp>
         <intProp name="ThreadGroup.ramp_time">1</intProp>
         <longProp name="ThreadGroup.duration">360</longProp>
@@ -432,7 +418,7 @@ if (token != null &amp;&amp; !token.equals(&quot;TOKEN_NOT_FOUND&quot;)) {
           </collectionProp>
         </HeaderManager>
         <hashTree/>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[&amp;Chaos] Off Exception Assault for Inventory Service">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[&amp;Chaos] Off Exception Assault for Inventory Service" enabled="true">
           <stringProp name="HTTPSampler.domain">${GATEWAY_HOST}</stringProp>
           <stringProp name="HTTPSampler.port">${GATEWAY_PORT}</stringProp>
           <stringProp name="HTTPSampler.protocol">${GATEWAY_PROTOCOL}</stringProp>
@@ -466,7 +452,7 @@ if (token != null &amp;&amp; !token.equals(&quot;TOKEN_NOT_FOUND&quot;)) {
         </HTTPSamplerProxy>
         <hashTree/>
       </hashTree>
-      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree">
+      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
         <boolProp name="ResultCollector.error_logging">false</boolProp>
         <objProp>
           <name>saveConfig</name>

@@ -31,8 +31,6 @@
           </elementProp>
         </collectionProp>
       </elementProp>
-      <boolProp name="TestPlan.functional_mode">false</boolProp>
-      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
     </TestPlan>
     <hashTree>
       <SetupThreadGroup guiclass="SetupThreadGroupGui" testclass="SetupThreadGroup" testname="setUp Thread Group">
@@ -46,7 +44,7 @@
         </elementProp>
       </SetupThreadGroup>
       <hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[?Auth] Login user" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[?Auth] Login user">
           <stringProp name="HTTPSampler.domain">${GATEWAY_HOST}</stringProp>
           <stringProp name="HTTPSampler.port">${GATEWAY_PORT}</stringProp>
           <stringProp name="HTTPSampler.protocol">${GATEWAY_PROTOCOL}</stringProp>
@@ -70,7 +68,7 @@
           </elementProp>
         </HTTPSamplerProxy>
         <hashTree>
-          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
             <collectionProp name="HeaderManager.headers">
               <elementProp name="" elementType="Header">
                 <stringProp name="Header.name">Content-Type</stringProp>
@@ -79,21 +77,21 @@
             </collectionProp>
           </HeaderManager>
           <hashTree/>
-          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor" enabled="true">
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor">
             <stringProp name="JSONPostProcessor.referenceNames">JWT_TOKEN</stringProp>
             <stringProp name="JSONPostProcessor.jsonPathExprs">$.id_token</stringProp>
             <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
           </JSONPostProcessor>
           <hashTree/>
         </hashTree>
-        <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor" enabled="true">
+        <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor">
           <stringProp name="JSONPostProcessor.referenceNames">JWT_TOKEN</stringProp>
           <stringProp name="JSONPostProcessor.jsonPathExprs">$.id_token</stringProp>
           <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
           <stringProp name="JSONPostProcessor.defaultValues">TOKEN_NOT_FOUND</stringProp>
         </JSONPostProcessor>
         <hashTree/>
-        <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="JSR223 PostProcessor" enabled="true">
+        <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="JSR223 PostProcessor">
           <stringProp name="cacheKey">true</stringProp>
           <stringProp name="filename"></stringProp>
           <stringProp name="parameters"></stringProp>
@@ -213,7 +211,7 @@ if (token != null &amp;&amp; !token.equals(&quot;TOKEN_NOT_FOUND&quot;)) {
           </collectionProp>
         </HeaderManager>
         <hashTree/>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[&amp;Chaos] Enable restController Chaos for Inventory Service" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[&amp;Chaos] Enable restController Chaos for Inventory Service">
           <stringProp name="HTTPSampler.domain">${GATEWAY_HOST}</stringProp>
           <stringProp name="HTTPSampler.port">${GATEWAY_PORT}</stringProp>
           <stringProp name="HTTPSampler.protocol">${GATEWAY_PROTOCOL}</stringProp>
@@ -277,7 +275,7 @@ if (token != null &amp;&amp; !token.equals(&quot;TOKEN_NOT_FOUND&quot;)) {
           <stringProp name="RandomTimer.range">200</stringProp>
         </GaussianRandomTimer>
         <hashTree/>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[@Main] Create new order" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="[@Main] Create new order">
           <stringProp name="HTTPSampler.domain">${GATEWAY_HOST}</stringProp>
           <stringProp name="HTTPSampler.port">${GATEWAY_PORT}</stringProp>
           <stringProp name="HTTPSampler.protocol">${GATEWAY_PROTOCOL}</stringProp>
@@ -297,18 +295,6 @@ if (token != null &amp;&amp; !token.equals(&quot;TOKEN_NOT_FOUND&quot;)) {
       &quot;productId&quot;: &quot;PROD-001&quot;,&#xd;
       &quot;quantity&quot;: 1.00,&#xd;
       &quot;total&quot;: 1299.99&#xd;
-    },&#xd;
-    {&#xd;
-      &quot;price&quot;: 25.50,&#xd;
-      &quot;productId&quot;: &quot;PROD-002&quot;,&#xd;
-      &quot;quantity&quot;: 2.00,&#xd;
-      &quot;total&quot;: 51.00&#xd;
-    },&#xd;
-    {&#xd;
-      &quot;price&quot;: 79.99,&#xd;
-      &quot;productId&quot;: &quot;PROD-003&quot;,&#xd;
-      &quot;quantity&quot;: 2.00,&#xd;
-      &quot;total&quot;: 159.98&#xd;
     }&#xd;
   ]&#xd;
 }</stringProp>
@@ -347,7 +333,7 @@ if (token != null &amp;&amp; !token.equals(&quot;TOKEN_NOT_FOUND&quot;)) {
         </HTTPSamplerProxy>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Chaos 2 - Inject Inventory LOW Latency Assault">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Chaos 2 - Inject Inventory LOW Latency Assault" enabled="true">
         <intProp name="ThreadGroup.num_threads">1</intProp>
         <intProp name="ThreadGroup.ramp_time">0</intProp>
         <longProp name="ThreadGroup.duration">360</longProp>
@@ -469,7 +455,7 @@ if (token != null &amp;&amp; !token.equals(&quot;TOKEN_NOT_FOUND&quot;)) {
         </HTTPSamplerProxy>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Chaos 4 - Off Inventory Choas Latency Assaults" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Chaos 4 - Off Inventory Choas Latency Assaults">
         <intProp name="ThreadGroup.num_threads">1</intProp>
         <intProp name="ThreadGroup.ramp_time">0</intProp>
         <longProp name="ThreadGroup.duration">360</longProp>
